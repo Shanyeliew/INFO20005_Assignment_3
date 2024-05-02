@@ -1,0 +1,8 @@
+body {
+    background-image: url(".res/background_dekstop.png");
+    background-position: center 0;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}   
