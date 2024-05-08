@@ -1,0 +1,22 @@
+@import url(https://fonts.googleapis.com/css2?family=Saira:wght@700&display=swap);
+
+.logo-text {
+    font-family: 'Saira',sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-optical-sizing: auto;
+    color: #fff;
+}
+
+.menu-text {
+    font-family: 'Saira',sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-optical-sizing: auto;
+    color: #fff;
+    margin-right: 8px;
+}
