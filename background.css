@@ -1,9 +1,10 @@
 body {
     background-color: #F7F7F9;
     background-image: url(".res/background.png");
-    background-position: center 50vw;
+    background-position: left 70vh;
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
 }   
+

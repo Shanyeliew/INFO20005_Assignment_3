@@ -15,14 +15,14 @@ nav {
     
 }
 .top {
-    padding: 1em 2.5em;
+    padding: 1.5em 2.5em;
     display: flex;
     align-self: stretch;
     align-items: center; 
 }
 
 .logo {
-    margin-right: 3em;
+    margin-right: 2em;
 }
 
 .menu {
@@ -33,10 +33,9 @@ nav {
 }
 
 .menu-item {
-    margin-right: 1em;
     display: flex;
     align-items: center;
-    padding: 1em 2em;
+    padding: 0.5em 1em;
 }
 
 .icon {

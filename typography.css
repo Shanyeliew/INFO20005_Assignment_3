@@ -1,5 +1,10 @@
 @import url(https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap);
 
+p {
+    margin: 0;
+    padding: 0;
+}
+
 .logo-text {
     font-family: 'Saira',sans-serif;
     font-size: 32px;
@@ -59,4 +64,58 @@
     font-variation-settings: "wdth" 100;
     font-optical-sizing: auto;
     color: #fff;
+}
+
+h1 {
+    font-family: 'Saira',sans-serif;
+    font-size: 54px;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-optical-sizing: auto;
+    color: #ffffff;
+    margin: 0;
+}
+
+.product-category {
+    font-family: 'Saira',sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-optical-sizing: auto;
+    color: #AEAEAE;
+    margin: 0;
+}
+
+.product-name {
+    font-family: 'Saira',sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-optical-sizing: auto;
+    color: #ffffff;
+    margin-top: -5px;
+}
+
+.product-promotion {
+    font-family: 'Saira',sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-optical-sizing: auto;
+    color: #ffffff;
+    margin: 0;
+}
+.product-price {
+    font-family: 'Saira',sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-optical-sizing: auto;
+    color: #ffffff;
+    margin: 0;
 }

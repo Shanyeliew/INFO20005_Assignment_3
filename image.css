@@ -8,3 +8,38 @@
     margin-left: 4em;
     margin-right: 4em;
 }
+
+.block-image {
+    border-radius: 1em;
+    object-fit: cover;
+}
+
+#mario {
+    width: calc(50vw - 5em);
+    height: calc(50vw - 5em);
+}
+
+#console-yellow {
+    width: calc(50vw - 5em);
+    height: calc((50vw - 5em)/2 - 0.5em);
+}
+
+#street-fighter {
+    width: calc((50vw - 5em)/2 - 0.5em);
+    height: calc((50vw - 5em)/2 - 0.5em);
+    margin-right: 1em;
+}
+
+#pokemon {
+    width: calc((50vw - 5em)/2 - 0.5em);
+    height: calc((50vw - 5em)/2 - 0.5em);
+}
+
+.product-card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: right;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
