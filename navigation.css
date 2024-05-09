@@ -12,6 +12,7 @@ nav {
     margin-left: 2.5em;
     margin-right: 2.5em;
     margin-top: 2em;
+    
 }
 .top {
     padding: 1em 2.5em;
@@ -41,6 +42,7 @@ nav {
 .icon {
     width: 24px;
     height: 24px;
+    margin-right: 1em;
 }
 
 .search {

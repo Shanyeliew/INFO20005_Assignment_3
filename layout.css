@@ -1,0 +1,11 @@
+header {
+    margin: 0;
+}
+.award {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    margin: 0;
+    padding: 2em 0;
+}

@@ -1,0 +1,10 @@
+.hero-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.award-image {
+    width: 150px;
+    margin-left: 4em;
+    margin-right: 4em;
+}

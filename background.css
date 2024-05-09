@@ -1,6 +1,7 @@
 body {
-    background-image: url(".res/background_dekstop.png");
-    background-position: center 0;
+    background-color: #F7F7F9;
+    background-image: url(".res/background.png");
+    background-position: center 50vw;
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: cover;
