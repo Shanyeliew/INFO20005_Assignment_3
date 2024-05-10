@@ -33,14 +33,14 @@
     margin-bottom: 1em;
 }
 
-.news,.sale {
+.news, .sale, .categories {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2.5em 5em;
 }
 
-.product-group {
+.product-group, .category-group {
     display: flex;
     align-items: center;
     align-self: stretch;
@@ -90,4 +90,14 @@
     padding: 0.3em 0.5em;
     border-radius: 0.2em;
     margin-right: auto;
+}
+
+.art_holder {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+#consoles {
+    background-color: #b382ff;
 }

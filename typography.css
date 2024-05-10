@@ -109,7 +109,7 @@ h1 {
     color: #ffffff;
     margin: 0;
 }
-.product-price {
+.product-price, .category-name {
     font-family: 'Saira',sans-serif;
     font-size: 24px;
     font-weight: 500;
