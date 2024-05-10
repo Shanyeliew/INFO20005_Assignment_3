@@ -1,3 +1,4 @@
+/*landing-page*/
 .hero {
     margin-bottom: -0.25em;
     padding: 0;
@@ -8,7 +9,7 @@
     justify-content: center;
     background-color: black;
     margin: 0;
-    padding: 1em 1em;
+    padding: 2.5em 1em;
 }
 
 .block {
@@ -33,11 +34,19 @@
     margin-bottom: 1em;
 }
 
-.news, .sale, .categories, .discover {
+.news, .sale, .categories, .discover,.join-community {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2.5em 5em;
+    padding: 5em 5em;
+}
+
+.categories {
+    background: linear-gradient(180deg, rgba(43,2,74,.5) 0%, rgba(72,35,172,.5) 100%, rgba(83,15,228,.5) 100%);
+}
+
+.discover {
+    background-color: black;
 }
 
 .product-group, .category-group, .discover-group {
@@ -136,4 +145,50 @@
     height: 130px;
     border-radius: 2em;
     border: 0.1em solid white;
+    background-position: center;
+    background-size: cover;
+}
+
+#Gold-Coast {
+    background-image: url(".res/discover-gold-coast.jpg");
+}
+
+#Sydney {
+    background-image: url(".res/discover-sydney.webp");
+}
+
+#Brisbane {
+    background-image: url(".res/discover-brisbane.webp");
+}
+
+#Melbourne {
+    background-image: url(".res/discover-melbourne.png");
+}
+
+#Thailand {
+    background-image: url(".res/discover-thailand.png");
+}
+
+.join-community {
+    align-items: flex-start;
+    background: linear-gradient(180deg, rgba(18,1,41,.8) 0%, rgba(0,0,0,.8) 100%), url(".res/mario-join.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+.join-button {
+    border-radius: 5em;
+    padding: 0.5em 1.5em;
+    border: white solid 0.1em;
+    background-color: transparent;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* Product list */
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 5em;
 }

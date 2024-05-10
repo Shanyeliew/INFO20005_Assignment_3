@@ -5,8 +5,8 @@
 
 .award-image {
     width: 150px;
-    margin-left: 4em;
-    margin-right: 4em;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
 }
 
 .block-image {
@@ -44,7 +44,7 @@
     border-top-right-radius: 1em;
 }
 
-.category-image, .discover-image {
+.category-image{
     width: 100%;
     height: 100%;
     object-fit: contain;
