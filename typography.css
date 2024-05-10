@@ -109,10 +109,21 @@ h1 {
     color: #ffffff;
     margin: 0;
 }
-.product-price, .category-name {
+.product-price {
     font-family: 'Saira',sans-serif;
     font-size: 24px;
     font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-optical-sizing: auto;
+    color: #ffffff;
+    margin: 0;
+}
+
+.category-name {
+    font-family: 'Saira',sans-serif;
+    font-size: 24px;
+    font-weight: 400;
     font-style: normal;
     font-variation-settings: "wdth" 100;
     font-optical-sizing: auto;

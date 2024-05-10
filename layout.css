@@ -33,14 +33,14 @@
     margin-bottom: 1em;
 }
 
-.news, .sale, .categories {
+.news, .sale, .categories, .discover {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2.5em 5em;
 }
 
-.product-group, .category-group {
+.product-group, .category-group, .discover-group {
     display: flex;
     align-items: center;
     align-self: stretch;
@@ -92,12 +92,48 @@
     margin-right: auto;
 }
 
-.art_holder {
+.category-card, .discover-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.art-holder {
     width: 130px;
     height: 130px;
     border-radius: 50%;
 }
 
-#consoles {
+#Consoles {
     background-color: #b382ff;
+}
+
+#Games {
+    background-color: #6F30E8;
+}
+
+#Collectible-cards {
+    background-color: #3220A0;
+}
+
+#Figurines {
+    background-color: #1E0C79;
+}
+
+#Old-Consoles {
+    background-color: #28007E;
+}
+
+#Fashion {
+    background-color: #34077F;
+}
+
+.discover-holder {
+    width: 130px;
+    height: 130px;
+    border-radius: 2em;
+    border: 0.1em solid white;
 }
