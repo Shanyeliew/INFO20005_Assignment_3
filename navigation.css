@@ -3,56 +3,55 @@ nav {
     flex-direction: column;
     justify-content: stretch;
     align-items: flex-start;
-    padding: 0 3em;
+    padding: 0 3rem;
     background-color: #242424;
     border-radius: 100px;
     box-shadow: 0 5px 4px rgba(0, 0, 0, 0.25);
     position: sticky;
-    top: 2em;
-    margin-left: 2.5em;
-    margin-right: 2.5em;
-    margin-top: 2em;
+    top: 2rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    margin-top: 2rem;
     
 }
 .top {
-    padding: 1.5em 2.5em;
+    padding: 1.5rem 2.5rem;
     display: flex;
     align-self: stretch;
     align-items: center; 
 }
 
 .logo {
-    margin-right: 2em;
+    margin-right: 2rem;
 }
 
 .menu {
     display: flex;
     align-items: center;
     flex: 1;
-    margin-right: 2em;
+    margin-right: 2rem;
 }
 
 .menu-item {
     display: flex;
     align-items: center;
-    padding: 0.5em 1em;
+    padding: 0.5rem 1rem;
 }
 
 .icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 1em;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .search {
     background-color: #F2F4F8;
-    border-radius: 100px;
-    padding: 1em 1.5em;
+    border-radius: 6.25rem;
+    padding: 0.75rem 1rem;;
     display: flex;
     align-items: center;
-    margin-right: 2em;
-    width: 171px;
-    height: 24px;
+    margin-right: 2rem;
+    width: 12rem;
+    height: 1.5rem;
 }
 
 .button {
@@ -62,12 +61,12 @@ nav {
 }
 
 #cart {
-    width: 36px;
-    height: 36px;
+    width: 2.25rem;
+    height: 2.25rem;
     margin-right: 1em;
 }
 
 #profile {
-    width: 36px;
-    height: 36px;
+    width: 2.25rem;
+    height: 2.25rem;
 }

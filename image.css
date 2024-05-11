@@ -35,18 +35,120 @@
     height: calc((50vw - 5em)/2 - 0.5em);
 }
 
-.product-card-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    object-position: right;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
+
+#Xbox-Series-X {
+    background: url(".res/xbox-card.jpeg") -395.136px -0.042px / 265.813% 100% no-repeat;
 }
 
-.category-image{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
+#Made-in-Abyss-Figurine {
+    background: url(".res/made-in-abyss.jpg") center / cover;
+}
+
+#Persona-3 {
+    background: url(".res/persona-3.webp") center / cover;
+}
+
+#Nintendo-Switch-Lite {
+    background: url(".res/nintendo-switch-light.jpg") center / cover;
+}
+
+#Atelier-Ayesha-DX {
+    background: url(".res/atelier-ayesha-dx.jpg") center / cover;
+}
+
+#Hollow-Knight {
+    background: url(".res/hollow-knight.webp") 0px -22.621px/ cover;
+}
+
+#Mewtwo-V-Card {
+    background: url(".res/mewtwo-v-card.jpg") center / cover;
+}
+
+#Chainsaw-Man-T-Shirt {
+    background: url(".res/chainsaw-man-T-shirt.webp") center / cover;
+}
+
+#Consoles {
+    background: url(".res/category-console.PNG") center / cover, #b382ff;
+}
+
+#Games {
+    background: url(".res/category-games.PNG") center / cover, #6F30E8;
+}
+
+#Collectible-cards {
+    background: url(".res/category-collectible-cards.PNG") center / cover, #3220A0;
+}
+
+#Figurines {
+    background: url(".res/category-figurine.PNG") center / contain no-repeat, #1E0C79;
+}
+
+#Old-Consoles {
+    background: url(".res/category-old-consoles.PNG") center / 80% 80% no-repeat, #28007E;
+}
+
+#Fashion {
+    background: url(".res/category-fashion.PNG") center / cover, #34077F;
+}
+
+#Gold-Coast {
+    background-image: url(".res/discover-gold-coast.jpg");
+}
+
+#Sydney {
+    background-image: url(".res/discover-sydney.webp");
+}
+
+#Brisbane {
+    background-image: url(".res/discover-brisbane.webp");
+}
+
+#Melbourne {
+    background-image: url(".res/discover-melbourne.png");
+}
+
+#Thailand {
+    background-image: url(".res/discover-thailand.png");
+}
+
+/* Product list*/
+#Playstation-5-Joycon {
+    background: url(".res/Playstation-5-Joycon.jpg") center / cover;
+}
+
+#Nintendo-NES-Console-1 {
+    background: url(".res/Nintendo-NES-Console-1.jpg") center / cover;
+}
+
+#Playstation-5-Console {
+    background: url(".res/Playstation-5-Console.jpg") center / cover;
+}
+
+#Nintendo-Switch-OLED {
+    background: url(".res/Nintendo-Switch-OLED.webp") center / cover;
+}
+
+#Nintendo-Switch-Sports {
+    background: url(".res/Nintendo-Switch-Sports.webp") center / cover;
+}
+
+#Handheld-Retro-Video {
+    background: url(".res/Handheld-Retro-Video.webp") center / cover;
+}
+
+#Retro-Mini-Tv {
+    background: url(".res/Retro-Mini-Tv.jpg") center / cover;
+}
+
+#US-Sega-Saturn-Console {
+    background: url(".res/US-Sega-Saturn-Console.jpg") center / cover;
+}
+   
+#Switch-OLED-Model {
+    background: url(".res/Switch-OLED-Model.jpg") center / cover;
+}
+
+#Nintendo-Wii-Console {
+    background: url(".res/Nintendo-Wii-Console.webp") center / cover;
 }
