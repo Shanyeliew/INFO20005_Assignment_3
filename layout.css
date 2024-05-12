@@ -108,11 +108,15 @@
     align-items: center;
 }
 
-.promotion {
+.promotion, .promotion-bigger{
     background-color: #105BEC;
     padding: 0.3rem 0.5rem;
     border-radius: 0.2rem;
     margin-right: auto;
+}
+
+.promotion-bigger {
+    padding: 0.625rem;
 }
 
 .category-card, .discover-card {
@@ -245,15 +249,121 @@
 }
 
 /* Product Page*/
-.toggle-menu {
-    flex-direction: row;
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 5rem;
     gap: 1rem;
 }
 
+.images-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 13.0625rem;
+    border-radius: 0.5rem;
+}
+
+#grid-item-1 {
+    grid-column: 1;
+    grid-row: 1 ;
+    background: url(.res/Xbox-1.jpg) center / contain no-repeat, #FFF;
+    
+}
+
+#grid-item-2 {
+    grid-column: 1;
+    grid-row: 2;
+    background: url(.res/Xbox-2.jpg) center / cover no-repeat, #FFF;
+}
+
+#grid-item-3 {
+    grid-column: 1;
+    grid-row: 3;
+    background: url(.res/xbox-card.jpeg) -151.506px 0px / 196.641% 100% no-repeat, #DDE1E6;
+    
+}
+
+#grid-item-4 {
+    grid-column: 2 / span 3;
+    grid-row: 1 / span 3;
+    background: url(.res/xbox-card.jpeg) -730.008px -5px / 280.752% 101.445% no-repeat, #DDE1E6;
+    width: 30.375rem;
+    height: 32.0625rem;
+    border-radius: 1rem;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.status {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.toggle-menu {
+    flex-direction: row;
+    padding: 2.5rem 5rem;
+    gap: 1rem;
+}
+
+.menu-button {
+    padding: 1rem 1.5rem;
+    margin: 0;
+}
+
+#selected {
+    background: rgb(255, 255, 255);
+    color: #000000;
+}
+
 .product-description {
+    padding: 2.5rem 5rem;
     background: rgba(255, 255, 255, 0.10);
 }
 
 .recommendations {
     align-items: flex-start;
 }
+
+.function-buttons {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.product-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    border-radius: 0.5rem;
+    background: #FFF;
+    padding: 1rem;
+}
+
+.quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    padding: 1rem;
+    gap: 2rem;
+    background: rgba(255, 255, 255, 0.10);
+    border-radius: 0.5rem;
+}
+
+

@@ -38,7 +38,7 @@ p {
     color: #fff;
 }
 
-.footer-menu-text, .number {
+.footer-menu-text, .number, .menu-button{
     font-family: 'Saira',sans-serif;
     font-size: 1rem;
     font-weight: 500;
@@ -84,7 +84,7 @@ h2 {
     margin: 0;
 }
 
-.product-name {
+.product-name, .product-button{
     font-family: 'Saira',sans-serif;
     font-size: 1.25rem;
     font-weight: 500;
@@ -93,7 +93,7 @@ h2 {
     line-height: 110%;
 }
 
-.product-promotion {
+.product-promotion, .product-promotion-bigger{
     font-family: 'Saira',sans-serif;
     font-size: 0.875rem;
     font-weight: 600;
@@ -101,6 +101,10 @@ h2 {
     color: #ffffff;
     line-height: 1.25rem;
     margin: 0;
+}
+
+.product-promotion-bigger {
+    font-size: 1.25rem;
 }
 
 .product-price {
@@ -164,7 +168,7 @@ h2 {
     line-height: 140%;
 }
 
-.product-card-button, .menu-button {
+.product-card-button {
     font-family: 'Saira',sans-serif;
     font-size: 0.875rem;
     font-weight: 500;
@@ -184,6 +188,34 @@ h2 {
     line-height: 140%;
 }
 
-.menu-button {
-    padding: 1rem 0.75rem;
+.status-text {
+    font-family: 'Saira',sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-style: normal;
+    color: #25DE38;
+    line-height: 100%;
+}
+
+.short-info {
+    font-family: 'Saira',sans-serif;
+    font-size: 1.15rem;
+    font-weight: 500;
+    font-style: normal;
+    color: #ffffff;
+    line-height: 140%;
+}
+
+.product-button {
+    color: #242424;
+    letter-spacing: 0.03125rem;
+}
+
+.quantity-number {
+    font-family: 'Saira',sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-style: normal;
+    color: #ffffff;
+    line-height: 100%;
 }
