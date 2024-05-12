@@ -45,6 +45,7 @@ p {
     font-style: normal;
     line-height: 100%;
     color: #fff;
+    margin-bottom: 0.5rem;
 }
 
 .copy-text, .side-menu-text-2 {
@@ -163,7 +164,7 @@ h2 {
     line-height: 140%;
 }
 
-.product-card-button {
+.product-card-button, .menu-button {
     font-family: 'Saira',sans-serif;
     font-size: 0.875rem;
     font-weight: 500;
@@ -171,4 +172,18 @@ h2 {
     color: #ffffff;
     line-height: 100%;
     letter-spacing: 0.03125rem;
+}
+
+/* Product page */
+.product-description-text {
+    font-family: 'Saira',sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    line-height: 140%;
+}
+
+.menu-button {
+    padding: 1rem 0.75rem;
 }
