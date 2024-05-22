@@ -12,22 +12,64 @@
     <link rel="stylesheet" href="layout.css">
 </head>
 <body>
-<section class="shopping-cart">
-    <!---Title-->
-    <h1>My Cart</h1>
+    <h2>My Cart</h2>
+    <hr style="background-color:#fff;">
     
-    <!---Products-->
-    <section class="cart">
-        <div class="img">
-            <img src=".res/xbox-card.jpeg">
-            <div class="product-description">
-                <h2 class="product-name">Xbox Console</h2>
-                <h3 class="product-price">$450</h3>
-                <h3 class="product-status">In stock</h3>
-                <p class="product-quantity">Qty 1</p>
+        <!---Products-->
+        <div class="cart">
+            <div class="cart-img">
+                <img src=".res/xbox-card.jpeg">
+                <div class="product-desc">
+                    <h2 class="product-name">Xbox Console</h2>
+                    <p class="status-text">In Stock</p>
+                    <h3 class="product-price">$450</h3>                    
+                    <div class="function-buttons">
+                        <div class="quantity">
+                            <img src=".res/Icons/minus.png" alt="Minus">
+                            <p class="quantity-number">1</p>
+                            <img src=".res/Icons/plus.png" alt="Plus">
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <hr style="background-color:#fff;">
+                <div class="img">
+                    <img src=".res/xbox-card.jpeg">
+                    <div class="product-desc">
+                        <h2 class="product-name">Xbox Console</h2>
+                        <p class="status-text">In Stock</p>
+                        <h3 class="product-price">$450</h3>
+                        <div class="function-buttons">
+                            <div class="quantity">
+                                <img src=".res/Icons/minus.png" alt="Minus">
+                                <p class="quantity-number">1</p>
+                                <img src=".res/Icons/plus.png" alt="Plus">
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            <hr style="background-color:#fff;">
+        <!--pricing-->
+        <div class="spacing">
+            <div class="subtotal">
+                <span>Subtotal:</span> <span>$ <span id="subtotal">900</span></span>
+            </div>
+            <div class="subtotal">
+                <span>Shipping:</span> <span>$ <span id="subtotal">15</span></span>
+            </div>    
+            <div class="subtotal">   
+                <span>Promo Subtotal:</span> <span>- $ <span id="subtotal">20</span></span>
+            </div>
+            <hr style="background-color:#fff;">
+            
+            <div class="product-price">
+                <span>Total:</span> <span>$ <span id="product-price">895</span></span>
             </div>
         </div>
-        <p class="status-text">In Stock</p>
-</section>
+    </div>
+    </section>
+</div> 
+    <!--button-->
+    <button class="confirm-payment-btn">Confirm Payment</button>
 </body>
 </html>

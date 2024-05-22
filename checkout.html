@@ -28,21 +28,22 @@
                     <input id="firstName" type="text" class="form-control" placeholder="Cindy" required>  
                 </div>
             </div>
+            
                 <div class="product-name">
                     <div class="product-name">Last Name</div>
                     <div class="product-name">            
                         <input id="lastName" type="text" class="form-control" placeholder="Wang" required>
-                        <div class="invalid-feedback"></div>
+
                     </div>
                 </div>
                     <div class="product-name">Email Address</div>
                     <div class="product-name">            
-                        <input id="emailAdress" type="text" class="form-control" placeholder="cindyw@hotgmail.com" required>
-                        <div class="invalid-feedback"></div>
+                        <input id="emailAdress" type="text" class="form-control-max" placeholder="cindyw@hotgmail.com" required>
+
                     </div>  
                     <div class="product-name">Contact Number</div>
                     <div class="product-name">            
-                        <input id="contactNumber" type="text" class="form-control" placeholder="0456893217" required>
+                        <input id="contactNumber" type="text" class="form-control-max" placeholder="0456893217" required>
                         <div class="invalid-feedback"></div>
                     </div>  
                 </div>   
@@ -50,73 +51,73 @@
     </section>
     <!--Shipping Details-->  
     <section class="container">
-        <h2 class="mb-3">Shipping Details</h2>       
+        <h2>Shipping Details</h2>       
     
         <div class="container">           
                 <div class="radio-text">
-                  <input type="radio" id="radio-text" name="drone" value="huey" checked/>
+                  <input type="radio" id="radio-text" name="drone" value="huey" checked />
                   <label for="radio-text">Standard Delivery</label>           
                 <div>
                   <input type="radio" id="radio-text" name="drone" value="dewey" unchecked/>
                   <label for="radio-text">Express Delivery</label>
                 </div>
         </div>
-        <form novalidate>
         <div class="product-name">Address Line 1</div>
-            <div class="row g-3">
-                <div class="col-sm-6">               
-                    <input id="firstName" type="text" class="form-control" placeholder="Cindy" required>
-                    <div class="invalid-feedback"></div>    
+            <div class="product-name">
+                <div class="product-name">               
+                    <input id="Address-line-1" type="text" class="form-control-max" placeholder="56 Calder Road" required>
+                
                 </div>
             </div>
-        <div class="product-name">Town/Suburban</div>
-                <div class="col-sm-6">            
-                    <input id="lastName" type="text" class="form-control" placeholder="Wang" required>
-                    <div class="invalid-feedback"></div>
+
+        <div class="product-name">Addrerss Line 2</div>
+                <div class="product-name">            
+                    <input id="Address-line-2" type="text" class="form-control-max" placeholder="Thornbury">
                 </div>
-                <div class="product-name">State</div>
-                <div class="col-sm-6">            
-                    <input id="emailAdress" type="text" class="form-control" placeholder="cindyw@hotgmail.com" required>
-                    <div class="invalid-feedback"></div>
-                </div>  
-                <div class="product-name">Postal Code</div>
-                <div class="col-sm-6">            
-                    <input id="contactNumber" type="text" class="form-control" placeholder="0456893217" required>
-                    <div class="invalid-feedback"></div>
-                </div>     
-        </form>
+                <div class="container">
+                    <div class="checkout-row">
+                        <div class="product-name"> 
+                            <div class="product-name">State</div>
+                            <input id="state" type="text" class="form-control" placeholder="VIC" required>  
+                        </div>
+                    </div>
+                    
+                        <div class="product-name">
+                            <div class="product-name">Postcode</div>
+                            <div class="product-name">            
+                                <input id="postcode" type="text" class="form-control" placeholder="3768" required>
+        
+                            </div>
+                        </div>
     </section>
 
     <!--Payment Method-->
     <section class="container">
-        <h2 class="mb-3">Payment Method</h2>       
+        <h2>Payment Method</h2>       
         
         <div class="container">
             <div class="radio-text">
                 <input type="radio" id="radio-text" name="drone" value="huey" checked />
-                <label for="radio-text">Standard Delivery</label>           
+                <label for="radio-text">Credit Card</label>           
             <div>
                 <input type="radio" id="radio-text" name="drone" value="dewey" unchecked />
-                <label for="radio-text">Express Delivery</label>
+                <label for="radio-text">Paypal</label>
             </div>
         </div>
-        <form novalidate>
-        <div class="product-name">First Name</div>
-            <div class="row g-3">
-                <div class="col-sm-6">               
-                    <input id="firstName" type="text" class="form-control" placeholder="Cindy" required>
-                    <div class="invalid-feedback"></div>    
+        <div class="product-name">Card Number</div>
+
+                <div class="product-name">               
+                    <input id="firstName" type="text" class="form-control-max" placeholder="Cindy" required>
                 </div>
             </div>
-        <div class="product-name">Last Name</div>
-                <div class="col-sm-6">            
+        <div class="product-name">Expiration Date</div>
+                <div class="product-name">            
                     <input id="lastName" type="text" class="form-control" placeholder="Wang" required>
-                    <div class="invalid-feedback"></div>
                 </div>
-                <div class="product-name">Email Address</div>
-                <div class="col-sm-6">            
+                <div class="product-name">CVV</div>
+                <div class="product-name">            
                     <input id="emailAdress" type="text" class="form-control" placeholder="cindyw@hotgmail.com" required>
-                    <div class="invalid-feedback"></div>
+
                 </div>    
         </form>
     </section>
@@ -128,9 +129,12 @@
     <hr style="background-color:#fff;">
     
         <!---Products-->
-        <div class="cart">
-            <div class="cart-img">
-                <img src=".res/xbox-card.jpeg">
+        <div class="product-container">
+            <section class="product-header">
+                <div class="product-container">
+                    <span class="image-holder" id="Xbox-Series-1"></span>
+                </div>  
+                <img scr=".res/Xbox-Series-1.jpeg">
                 <div class="product-desc">
                     <h2 class="product-name">Xbox Console</h2>
                     <p class="status-text">In Stock</p>

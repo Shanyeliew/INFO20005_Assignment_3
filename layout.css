@@ -486,7 +486,7 @@
     margin: 2rem
 }
 .checkout-row {
-    display: flex-start;
+    float: left;
 
 }
 
@@ -496,6 +496,11 @@
     margin-bottom: 1.5rem;
 }
 
+.form-control-max {
+    padding: 0.5rem 15.25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
 
 
 .shopping-cart-container {
@@ -509,6 +514,11 @@
     background: hsla(0, 0%, 100%, 0.1)
 
 }
+
+.product-container {
+    height: 24.0625rem;
+}
+
 
 .cart-img   {
     max-width:100%;
