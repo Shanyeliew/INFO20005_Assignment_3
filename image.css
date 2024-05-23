@@ -152,3 +152,8 @@
 #Nintendo-Wii-Console {
     background: url(".res/Nintendo-Wii-Console.webp") center / cover;
 }
+
+#Xbox-Series-X-cart {
+    background: url(".res/xbox-card.jpeg") -197.641px 0px / 262.188% 100% no-repeat;
+    
+}

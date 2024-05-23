@@ -220,7 +220,7 @@ h3 {
     letter-spacing: 0.03125rem;
 }
 
-.quantity-number {
+.quantity-number, #placeholder {
     font-family: 'Saira',sans-serif;
     font-size: 0.875rem;
     font-weight: 500;
@@ -230,7 +230,40 @@ h3 {
 }
 
 /*Checkout page*/
+.back-home-button {
+    font-family: 'Saira',sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    font-style: normal;
+    color: 242424;
+    line-height: 140%;
+}
 
+.order-track-button {
+    font-family: 'Saira',sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    font-style: normal;
+    color: #ffffff;
+    line-height: 140%;
+}
+
+.product-desc {
+    font-family: 'Saira',sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    line-height: 140%;
+}
+.confirm-payment-btn {
+    font-family: 'Saira',sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    font-style: normal;
+    color: #ffffff;
+    line-height: 140%;
+}
 .radio-text {
     font-family: 'Saira',sans-serif;
     font-size: 0.9rem;
@@ -241,11 +274,48 @@ h3 {
 }
 
 /* Added to cart popup */
-.continue-shopping {
+.continue-shopping, .checkout-btn {
     font-family: 'Saira',sans-serif;
     font-size: 1.25rem;
     font-weight: 500;
     font-style: normal;
     color: #000000;
     line-height: 100%;
+}
+
+/* Cart overlay*/
+.cart-title {
+    font-family: 'Saira',sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    font-style: normal;
+    color: #ffffff;
+    line-height: 110%;
+}
+
+#Apply {
+    font-family: 'Saira',sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-style: normal;
+    color: #000000;
+    line-height: 100%;
+}
+
+.subtotal {
+    font-family: 'Saira',sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: normal;
+    color: #ffffff;
+    line-height: 110%;
+}
+
+.total-price {
+    font-family: 'Saira',sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-style: normal;
+    color: #ffffff;
+    line-height: 110%;
 }
