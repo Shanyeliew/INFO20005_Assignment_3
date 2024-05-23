@@ -1,3 +1,22 @@
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+
+#product-1 {
+    animation: fadeIn 1s;
+}
+
 /*landing-page*/
 .hero {
     margin-bottom: -0.25rem;
@@ -81,6 +100,7 @@
     padding: 0.5rem 0.75rem;
     background: transparent;
     border: 0.1rem solid #FFF;
+    z-index: 1;
 }
 
 .image-holder {
@@ -404,20 +424,17 @@
 }
 
 /*order confirmation*/
-    html,body {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        Padding: 0;
-        overflow-x: hidden;
-    }
 
 .confirmation {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 15rem;
-    width: 100%;
-    height: 200px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     justify-content: center;
 
 }
@@ -433,6 +450,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    align-self: stretch;
     margin-top: 1rem;
     border-radius: 0.5rem;
     padding: 1rem 10rem;
@@ -451,6 +469,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    align-self: stretch;
     margin-top: 1rem;
     border-radius: 0.5rem;
     padding: 1.5rem 10rem;
@@ -469,6 +488,7 @@
 .item-flex {
     display:flex;
     flex-grow: 1;
+    justify-content: space-between;
 }
 
 .product-desc {
@@ -549,4 +569,44 @@
     font-style: normal;
     color: #ffffff;
     line-height: 140%;
+}
+
+/* Added to cart pop-up*/
+
+.added-cart-popup {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+.popup-content {
+    display: flex;
+    width: 27.125rem;
+    height: 27.125rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: calc((100vh - 27.125rem) / 2) auto;
+    gap: 1rem;
+    border-radius: 0.5rem;
+    background: #242424;
+}
+
+.continue-shopping {
+    display: flex;
+    width: 15.3125rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    background: #FFF;
+}
+
+.show{
+    display: block;
 }

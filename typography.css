@@ -77,8 +77,8 @@ h2 {
 
 h3 {
     font-family: 'Saira',sans-serif;
-    font-size: 0.9rem;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 400;
     font-style: normal;
     color: #ffffff;
     margin: 0;
@@ -238,4 +238,14 @@ h3 {
     font-style: normal;
     color: #ffffff;
     margin-bottom: 1.5rem;
+}
+
+/* Added to cart popup */
+.continue-shopping {
+    font-family: 'Saira',sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-style: normal;
+    color: #000000;
+    line-height: 100%;
 }
