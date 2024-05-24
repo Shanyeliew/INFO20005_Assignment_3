@@ -4,7 +4,7 @@ body {
     background-position: center 0;
     background-attachment: scroll;
     background-repeat: no-repeat;
-    background-size: cover;
+    width: 100vw;
     margin: 0;
 }   
 

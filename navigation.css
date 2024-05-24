@@ -66,6 +66,19 @@ nav {
     margin-right: 1em;
 }
 
+#cart-count{
+    background-color: #C80000;
+    color: white;
+    border-radius: 50%;
+    padding: 0.25rem 0.4rem;
+    font-size: 0.75rem;
+    position: relative;
+    top: -2.8rem;
+    left: 1.3rem;
+    align-content: center;
+    display: none;
+}
+
 #profile {
     width: 2.25rem;
     height: 2.25rem;

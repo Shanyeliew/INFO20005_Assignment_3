@@ -5,6 +5,14 @@ p {
     padding: 0;
 }
 
+#cart-count {
+    font-family: 'Saira',sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 100%;
+}
+
 .logo-text {
     font-family: 'Saira',sans-serif;
     font-size: 2rem;
@@ -230,7 +238,7 @@ h3 {
 }
 
 /*Checkout page*/
-.back-home-button {
+#back-home-button {
     font-family: 'Saira',sans-serif;
     font-size: 1.125rem;
     font-weight: 500;
@@ -239,7 +247,7 @@ h3 {
     line-height: 140%;
 }
 
-.order-track-button {
+#order-track-button {
     font-family: 'Saira',sans-serif;
     font-size: 1.125rem;
     font-weight: 500;
