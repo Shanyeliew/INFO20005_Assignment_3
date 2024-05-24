@@ -60,10 +60,14 @@ nav {
     justify-content: flex-end;
 }
 
-#cart {
+#cart, #cart-hide {
     width: 2.25rem;
     height: 2.25rem;
     margin-right: 1em;
+}
+
+#cart-hide {
+    display: none;
 }
 
 #cart-count{
