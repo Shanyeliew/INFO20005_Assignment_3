@@ -1,0 +1,154 @@
+@import url(https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap);
+
+p, h1, h2, h3, .product-category, .product-promotion, .product-price, 
+.category-name, .filter {
+    margin: 0;
+}
+
+p {
+    padding: 0;
+}
+
+* {
+    font-family: 'Saira', sans-serif;
+    font-style: normal;
+    color: #fff;
+}
+
+h1 {
+    font-size: 3.375rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.625rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.product-card-button, .quantity-number, #placeholder, 
+.invalid-feedback, #Apply {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.logo-text, .filter, .cart-title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.cart-title {
+    font-weight: 500;
+}
+
+.menu-text, .side-menu-text, .continue-shopping, .checkout-btn, .join-button, .total-price, 
+.product-name, .product-button, .description, .short-info, .confirm-payment-btn,
+#back-home-button, #order-track-button,.dropdown-item,.dropdown-item-product {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.footer-logo-text {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.footer-menu-heading-text, .side-menu-text {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.footer-menu-text, .number, .menu-button, .subtotal {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.subtotal {
+    margin: 0;
+}
+
+.copy-text, .side-menu-text-2, .form-text, .radio-text, .product-promotion, 
+.product-desc, .product-description-text, input {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.product-description-text {
+    font-size: 1.125rem;
+}
+
+.product-promotion {
+    font-weight: 600;
+}
+
+.product-category {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #AEAEAE;
+}
+
+.product-promotion-bigger, .status-text{
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+}
+
+.product-price, .category-name {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 110%;
+}
+
+.product-price, .dropdown-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.description {
+    font-weight: 400;
+    margin-bottom: 1.5em;
+}
+
+.sort-text {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-right: 3rem;
+}
+
+.product-button, #back-home-button, input, .continue-shopping, .checkout-btn, #Apply {
+    color: #242424;
+}
+
+.product-button, .join-button, .product-card-button {
+    letter-spacing: 0.03125rem;
+}
+
+::placeholder {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #919191;
+}
+
+#cart-count {
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.invalid-feedback {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #d30000;
+}
+
+.status-text {
+    color: #25DE38;
+}

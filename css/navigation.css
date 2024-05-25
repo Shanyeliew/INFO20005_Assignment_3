@@ -1,0 +1,175 @@
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: flex-start;
+    padding: 0 3rem;
+    background-color: #242424;
+    border-radius: 100px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.25);
+    position: sticky;
+    top: 2rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    margin-top: 2rem;
+    
+}
+.top {
+    padding: 1.5rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    align-self: stretch;
+}
+
+.top-left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: stretch;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: auto;
+    gap: 1rem;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+}
+
+.top-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    align-self: stretch;
+    width: stretch;
+}
+
+.icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.search-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+#search {
+    background-image: url('../.res/Icons/search.png');
+    background-repeat: no-repeat;
+    background-position: center left 1rem;
+    background-color: #F2F4F8;
+    border-radius: 6.25rem;
+    padding: 0.75rem 1rem 0.75rem 3rem;
+    display: flex;
+    align-items: center;
+    width: stretch;
+    height: stretch;
+    font-size: 1rem;
+}
+
+#search:focus {
+    outline: none;
+}
+
+.dropdown {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 6rem;
+    background-color: #242424;
+    align-items: flex-start;
+    gap: 2rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    width: 23rem;
+}
+
+.dropdown-category, .dropdown-product {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.dropdown-item, .dropdown-title {
+    padding: 1rem 1.25rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.50);
+}
+
+.dropdown-title {
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+}
+
+.dropdown-item-product {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.50);
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#Xbox-Series-X-search {
+    width: 3.5625rem;
+    height: 3.5625rem;
+    background: url("../.res/xbox-card.jpeg") -75.104px 0px / 262.188% 100% no-repeat;
+}
+
+#Nintendo-Switch-Lite-search {
+    width: 3.5625rem;
+    height: 3.5625rem;
+    background-image: url("../.res/nintendo-switch-light.jpg");
+    background-size: cover;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+#cart, #cart-hide {
+    width: 2.25rem;
+    height: 2.25rem;
+}
+
+#cart-hide {
+    display: none;
+}
+
+#cart-count{
+    background-color: #C80000;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2rem 0.4rem;
+    position: relative;
+    top: -3rem;
+    left: 1.4rem;
+    align-items: center;
+    display: none;
+}
+
+#profile {
+    width: 2.25rem;
+    height: 2.25rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .menu {
+        display: none;
+    }
+    .search-overlay {
+        display: none;
+    }
+}

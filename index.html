@@ -5,59 +5,80 @@
     <meta name="viewport" content="width= , initial-scale=1.0">
     <meta name="view-transition" content="same-origin" />
     <title>Gameola</title>
-    <link rel="stylesheet" href="background.css">
-    <link rel="stylesheet" href="typography.css">
-    <link rel="stylesheet" href="navigation.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="image.css">
-    <link rel="stylesheet" href="layout.css">
+
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/typography.css">
+    
 </head>
 <body id="landing">
     <nav>
         <div class="top">
-            <a href="index.html">
-                <div class="logo">
-                    <p class="logo-text">GAMEOLA</p>
-                </div>
-            </a>
-            <div class="menu">
-                <div class="menu-item">
-                    <p class="menu-text">Sale</p>
-                    <div class="icon">
-                        <img src=".res/Icons/chevron_down.png">
+            <div class="top-left">
+                <a href="index.html">
+                    <div class="logo">
+                        <p class="logo-text">GAMEOLA</p>
                     </div>
-                </div>
-                <div class="menu-item">
-                    <p class="menu-text">Shop</p>
-                    <div class="icon">
-                        <img src=".res/Icons/chevron_down.png">
+                </a>
+                <div class="menu">
+                    <div class="menu-item">
+                        <p class="menu-text">Sale</p>
+                        <div class="icon">
+                            <img src=".res/Icons/chevron_down.png">
+                        </div>
                     </div>
-                </div>
-                <div class="menu-item">
-                    <p class="menu-text">Pos</p>
-                    <div class="icon">
-                        <img src=".res/Icons/chevron_down.png">
+                    <div class="menu-item">
+                        <p class="menu-text">Shop</p>
+                        <div class="icon">
+                            <img src=".res/Icons/chevron_down.png">
+                        </div>
                     </div>
-                </div>
-                <div class="menu-item">
-                    <p class="menu-text">Sell</p>
-                    <div class="icon">
-                        <img src=".res/Icons/chevron_down.png">
+                    <div class="menu-item">
+                        <p class="menu-text">Pos</p>
+                        <div class="icon">
+                            <img src=".res/Icons/chevron_down.png">
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <p class="menu-text">Sell</p>
+                        <div class="icon">
+                            <img src=".res/Icons/chevron_down.png">
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="search">
-                <div class="icon">
-                    <img src=".res/Icons/search.png" alt="Search">
+            <div class="top-right">
+                <div class="search-overlay">
+                    <input type="text" placeholder="Search" id="search">
+                    <div class="dropdown">
+                        <div class="dropdown-category">
+                            <a href="product_list.html" class="dropdown-item">Xbox <b>Consoles</b></a>
+                            <a class="dropdown-item">Playstation <b>Consoles</b></a>
+                            <a class="dropdown-item">Nintendo <b>Consoles</b></a>
+                        </div>
+                        <div class="dropdown-product">
+                            <p class="dropdown-title"><b>Products</b></p>
+                            <a href="product_1.html" class="dropdown-item-product">
+                                <span id="Xbox-Series-X-search"></span>
+                                <p>Xbox Series X</p>
+                            </a>
+                            <a href="product_2.html" class="dropdown-item-product">
+                                <span id="Nintendo-Switch-Lite-search"></span>
+                                <p>Nintendo Switch Lite</p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="button">
-                <div id="cart">
-                    <img src=".res/Icons/cart.png" alt="Cart">
-                    <span id="cart-count">0</span>
-                </div>
-                <div id="profile">
-                    <img src=".res/Icons/profile.png" alt="Profile">
+                <div class="button">
+                    <div id="cart">
+                        <img src=".res/Icons/cart.png" alt="Cart">
+                        <span id="cart-count">0</span>
+                    </div>
+                    <div id="profile">
+                        <img src=".res/Icons/profile.png" alt="Profile">
+                    </div>
                 </div>
             </div>
         </div>
@@ -69,253 +90,255 @@
         <img src=".res/award-2022.png" alt="award-2022" class="award-image">
         <img src=".res/award-2023.png" alt="award-2022" class="award-image">
     </section>
-    <section class="block">
-        <div class="block-item">
-            <img src=".res/mario.webp" alt="" class="block-image" id="mario">
-        </div>
-        <div class="block-group">
-            <div class="block-group-2">
-                <img src=".res/street-fighter.webp" alt="" class="block-image" id="street-fighter">
-                <img src=".res/pokemon.jpg" alt="" class="block-image" id="pokemon">
-            </div>
+    <section id="landing-background">
+        <section class="block">
             <div class="block-item">
-                <img src=".res/console-yellow.webp" alt="" class="block-image" id="console-yellow">
+                <img src=".res/mario.webp" alt="" class="block-image" id="mario">
             </div>
-        </div>
-    </section>
-    <section class="news">
-        <h1>New and Fresh</h1>
-        <div class="product-group">
-            <img src=".res/Icons/chevron-left.png" alt="left">
-            <a href="product_1.html" id="product-1">
+            <div class="block-group">
+                <div class="block-group-2">
+                    <img src=".res/street-fighter.webp" alt="" class="block-image" id="street-fighter">
+                    <img src=".res/pokemon.jpg" alt="" class="block-image" id="pokemon">
+                </div>
+                <div class="block-item">
+                    <img src=".res/console-yellow.webp" alt="" class="block-image" id="console-yellow">
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <h1>New and Fresh</h1>
+            <div class="product-group">
+                <img src=".res/Icons/chevron-left.png" alt="left">
+                <a href="product_1.html" >
+                    <div class="product-card">
+                        <span class="image-holder" id="Xbox-Series-X"></span>
+                        <div class="text-holder">
+                            <div class="info">
+                                <p class="product-category">Console</p>
+                                <p class="product-name">Xbox Series X</p>
+                            </div>
+                            <div class="figure">
+                                <div class="promotion">
+                                    <p class="product-promotion">-30%</p>
+                                </div>
+                                <div class="price">
+                                    <p class="product-price">$450</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
                 <div class="product-card">
-                    <span class="image-holder" id="Xbox-Series-X"></span>
+                    <span class="image-holder" id="Made-in-Abyss-Figurine"></span>
                     <div class="text-holder">
                         <div class="info">
-                            <p class="product-category">Console</p>
-                            <p class="product-name">Xbox Series X</p>
+                            <p class="product-category">Figurines</p>
+                            <p class="product-name">Made in Abyss Figurine</p>
                         </div>
                         <div class="figure">
                             <div class="promotion">
                                 <p class="product-promotion">-30%</p>
                             </div>
                             <div class="price">
+                                <p class="product-price">$121</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <span class="image-holder" id="Persona-3"></span>
+                    <div class="text-holder">
+                        <div class="info">
+                            <p class="product-category">Games</p>
+                            <p class="product-name">Persona 3</p>
+                        </div>
+                        <div class="figure">
+                            <div class="promotion">
+                                <p class="product-promotion">-30%</p>
+                            </div>
+                            <div class="price">
+                                <p class="product-price">$80</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <span class="image-holder" id="Nintendo-Switch-Lite"></span>
+                    <div class="text-holder">
+                        <div class="info">
+                            <p class="product-category">Console</p>
+                            <p class="product-name">Nintendo Switch Lite</p>
+                        </div>
+                        <div class="figure">
+                            <div class="price">
                                 <p class="product-price">$450</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </a>
-            <div class="product-card">
-                <span class="image-holder" id="Made-in-Abyss-Figurine"></span>
-                <div class="text-holder">
-                    <div class="info">
-                        <p class="product-category">Figurines</p>
-                        <p class="product-name">Made in Abyss Figurine</p>
-                    </div>
-                    <div class="figure">
-                        <div class="promotion">
-                            <p class="product-promotion">-30%</p>
-                        </div>
-                        <div class="price">
-                            <p class="product-price">$121</p>
-                        </div>
-                    </div>
-                </div>
+                <img src=".res/Icons/chevron-right.png" alt="right">
             </div>
-            <div class="product-card">
-                <span class="image-holder" id="Persona-3"></span>
-                <div class="text-holder">
-                    <div class="info">
-                        <p class="product-category">Games</p>
-                        <p class="product-name">Persona 3</p>
-                    </div>
-                    <div class="figure">
-                        <div class="promotion">
-                            <p class="product-promotion">-30%</p>
-                        </div>
-                        <div class="price">
-                            <p class="product-price">$80</p>
+        </section>
+        <section class="categories">
+            <h1>Category</h1>
+            <div class="category-group">
+                <a href="product_list.html">
+                    <div class="category-card">
+                        <span class="art-holder" id="Consoles"></span>
+                        <div class="text-holder">
+                            <p class="category-name">Consoles</p>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="product-card">
-                <span class="image-holder" id="Nintendo-Switch-Lite"></span>
-                <div class="text-holder">
-                    <div class="info">
-                        <p class="product-category">Console</p>
-                        <p class="product-name">Nintendo Switch Lite</p>
-                    </div>
-                    <div class="figure">
-                        <div class="price">
-                            <p class="product-price">$450</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <img src=".res/Icons/chevron-right.png" alt="right">
-        </div>
-    </section>
-    <section class="categories">
-        <h1>Category</h1>
-        <div class="category-group">
-            <a href="product_list.html">
+                </a>
                 <div class="category-card">
-                    <span class="art-holder" id="Consoles"></span>
+                    <span class="art-holder" id="Games"></span>  
                     <div class="text-holder">
-                        <p class="category-name">Consoles</p>
+                        <p class="category-name">Games</p>
                     </div>
                 </div>
-            </a>
-            <div class="category-card">
-                <span class="art-holder" id="Games"></span>  
-                <div class="text-holder">
-                    <p class="category-name">Games</p>
-                </div>
-            </div>
-            <div class="category-card">
-                <span class="art-holder" id="Collectible-cards"></span>
-                <div class="text-holder">
-                    <p class="category-name">Collectible Cards</p>
-                </div>
-            </div>
-            <div class="category-card">
-                <span class="art-holder" id="Figurines"></span>
-                <div class="text-holder">
-                    <p class="category-name">Figurines</p>
-                </div>
-            </div>
-            <div class="category-card">
-                <span class="art-holder" id="Old-Consoles"></span>
-                <div class="text-holder">
-                    <p class="category-name">Old Consoles</p>
-                </div>
-            </div>
-            <div class="category-card">
-                <span class="art-holder" id="Fashion"></span>
-                <div class="text-holder">
-                    <p class="category-name">Fashion</p>
-                </div>
-            </div>  
-        </div>
-    </section>
-    <section class="sale">
-        <h1>On Sale</h1>
-        <div class="product-group">
-            <img src=".res/Icons/chevron-left.png" alt="left">
-            <div class="product-card">
-                <span class="image-holder" id="Atelier-Ayesha-DX"></span>
-                <div class="text-holder">
-                    <div class="info">
-                        <p class="product-category">Games</p>
-                        <p class="product-name">Atelier Ayesha DX</p>
+                <div class="category-card">
+                    <span class="art-holder" id="Collectible-cards"></span>
+                    <div class="text-holder">
+                        <p class="category-name">Collectible Cards</p>
                     </div>
-                    <div class="figure">
-                        <div class="promotion">
-                            <p class="product-promotion">-30%</p>
+                </div>
+                <div class="category-card">
+                    <span class="art-holder" id="Figurines"></span>
+                    <div class="text-holder">
+                        <p class="category-name">Figurines</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <span class="art-holder" id="Old-Consoles"></span>
+                    <div class="text-holder">
+                        <p class="category-name">Old Consoles</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <span class="art-holder" id="Fashion"></span>
+                    <div class="text-holder">
+                        <p class="category-name">Fashion</p>
+                    </div>
+                </div>  
+            </div>
+        </section>
+        <section class="sale">
+            <h1>On Sale</h1>
+            <div class="product-group">
+                <img src=".res/Icons/chevron-left.png" alt="left">
+                <div class="product-card">
+                    <span class="image-holder" id="Atelier-Ayesha-DX"></span>
+                    <div class="text-holder">
+                        <div class="info">
+                            <p class="product-category">Games</p>
+                            <p class="product-name">Atelier Ayesha DX</p>
                         </div>
-                        <div class="price">
-                            <p class="product-price">$70</p>
+                        <div class="figure">
+                            <div class="promotion">
+                                <p class="product-promotion">-30%</p>
+                            </div>
+                            <div class="price">
+                                <p class="product-price">$70</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="product-card">
-                <span class="image-holder" id="Hollow-Knight"></span>
-                <div class="text-holder">
-                    <div class="info">
-                        <p class="product-category">Games</p>
-                        <p class="product-name">Hollow Knight</p>
-                    </div>
-                    <div class="figure">
-                        <div class="promotion">
-                            <p class="product-promotion">-30%</p>
+                <div class="product-card">
+                    <span class="image-holder" id="Hollow-Knight"></span>
+                    <div class="text-holder">
+                        <div class="info">
+                            <p class="product-category">Games</p>
+                            <p class="product-name">Hollow Knight</p>
                         </div>
-                        <div class="price">
-                            <p class="product-price">$65</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="product-card">
-                <span class="image-holder" id="Mewtwo-V-Card"></span>
-                <div class="text-holder">
-                    <div class="info">
-                        <p class="product-category">Collectible Cards</p>
-                        <p class="product-name">Mewtwo V Card</p>
-                    </div>
-                    <div class="figure">
-                        <div class="promotion">
-                            <p class="product-promotion">-30%</p>
-                        </div>
-                        <div class="price">
-                            <p class="product-price">$145</p>
+                        <div class="figure">
+                            <div class="promotion">
+                                <p class="product-promotion">-30%</p>
+                            </div>
+                            <div class="price">
+                                <p class="product-price">$65</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="product-card">
-                <span class="image-holder" id="Chainsaw-Man-T-Shirt"></span>
-                <div class="text-holder">
-                    <div class="info">
-                        <p class="product-category">Fashion</p>
-                        <p class="product-name">Chainsaw Man T-shirt</p>
-                    </div>
-                    <div class="figure">
-                        <div class="promotion">
-                            <p class="product-promotion">-30%</p>
+                <div class="product-card">
+                    <span class="image-holder" id="Mewtwo-V-Card"></span>
+                    <div class="text-holder">
+                        <div class="info">
+                            <p class="product-category">Collectible Cards</p>
+                            <p class="product-name">Mewtwo V Card</p>
                         </div>
-                        <div class="price">
-                            <p class="product-price">$20</p>
+                        <div class="figure">
+                            <div class="promotion">
+                                <p class="product-promotion">-30%</p>
+                            </div>
+                            <div class="price">
+                                <p class="product-price">$145</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <img src=".res/Icons/chevron-right.png" alt="right">
-        </div>
-    </section>
-    <section class="discover">
-        <h1>Discover</h1>
-        <div class="discover-group">
-            <div class="discover-card">
-                <span class="discover-holder" id="Gold-Coast"></span>
-                <div class="text-holder">
-                    <p class="category-name">Gold Coast</p>
+                <div class="product-card">
+                    <span class="image-holder" id="Chainsaw-Man-T-Shirt"></span>
+                    <div class="text-holder">
+                        <div class="info">
+                            <p class="product-category">Fashion</p>
+                            <p class="product-name">Chainsaw Man T-shirt</p>
+                        </div>
+                        <div class="figure">
+                            <div class="promotion">
+                                <p class="product-promotion">-30%</p>
+                            </div>
+                            <div class="price">
+                                <p class="product-price">$20</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <img src=".res/Icons/chevron-right.png" alt="right">
             </div>
-            <div class="discover-card">
-                <span class="discover-holder" id="Sydney"></span> 
-                <div class="text-holder">
-                    <p class="category-name">Sydney</p>
+        </section>
+        <section class="discover">
+            <h1>Discover</h1>
+            <div class="discover-group">
+                <div class="discover-card">
+                    <span class="discover-holder" id="Gold-Coast"></span>
+                    <div class="text-holder">
+                        <p class="category-name">Gold Coast</p>
+                    </div>
                 </div>
+                <div class="discover-card">
+                    <span class="discover-holder" id="Sydney"></span> 
+                    <div class="text-holder">
+                        <p class="category-name">Sydney</p>
+                    </div>
+                </div>
+                <div class="discover-card">
+                    <span class="discover-holder" id="Brisbane"></span>
+                    <div class="text-holder">
+                        <p class="category-name">Brisbane</p>
+                    </div>
+                </div>
+                <div class="discover-card">
+                    <span class="discover-holder" id="Melbourne"></span>
+                    <div class="text-holder">
+                        <p class="category-name">Melbourne</p>
+                    </div>
+                </div>
+                <div class="discover-card">
+                    <span class="discover-holder" id="Thailand"></span>
+                    <div class="text-holder">
+                        <p class="category-name">Thailand</p>
+                    </div>
+                </div> 
             </div>
-            <div class="discover-card">
-                <span class="discover-holder" id="Brisbane"></span>
-                <div class="text-holder">
-                    <p class="category-name">Brisbane</p>
-                </div>
-            </div>
-            <div class="discover-card">
-                <span class="discover-holder" id="Melbourne"></span>
-                <div class="text-holder">
-                    <p class="category-name">Melbourne</p>
-                </div>
-            </div>
-            <div class="discover-card">
-                <span class="discover-holder" id="Thailand"></span>
-                <div class="text-holder">
-                    <p class="category-name">Thailand</p>
-                </div>
-            </div> 
-        </div>
-    </section>
-    <section class="join-community">
-        <h2>Join the community</h2>
-        <p class="description">Dive into a vast collection of classic games & consoles!  Expert advice, 
-            a passionate community, and competitive pricing await.  Relive the nostalgia - shop today!
-        </p>
-        <button class="join-button">Join Now</button>
+        </section>
+        <section class="join-community">
+            <h2>Join the community</h2>
+            <p class="description">Dive into a vast collection of classic games & consoles!  Expert advice, 
+                a passionate community, and competitive pricing await.  Relive the nostalgia - shop today!
+            </p>
+            <button class="join-button">Join Now</button>
+        </section>
     </section>
     <footer>
         <div class="head">

@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
-    <link rel="stylesheet" href="background.css">
-    <link rel="stylesheet" href="typography.css">
-    <link rel="stylesheet" href="navigation.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="image.css">
-    <link rel="stylesheet" href="layout.css">
+
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/typography.css">
+
 </head>
 <body>
     <!--Title-->
@@ -29,24 +30,24 @@
                         <div class="form-block">
                             <p class="form-text">First Name</p>
                             <input id="first-name" type="text" required>
-                            <p class="invalid-feedback">Invalid input</p>
+                            <p class="invalid-feedback" id="first-name-error"></p>
                         </div>
-                        <div class="form-block">
+                        <div class="form-block">   
                             <p class="form-text">Last Name</p>
                             <input id="last-name" type="text" required>
-                            <p class="invalid-feedback"></p>
+                            <p class="invalid-feedback" id="last-name-error"></p>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-block">
                             <p class="form-text">Email Address</p>
                             <input id="email" type="email" placeholder="e.g: user@usermail.com" required>
-                            <p class="invalid-feedback"></p>
+                            <p class="invalid-feedback" id="email-error"></p>
                         </div>
                         <div class="form-block">
                             <p class="form-text">Contact Number</p>
-                            <input id="contact-number" type="tel" placeholder="e.g: 0123459786" pattern="0[0-9]{9}">
-                            <p class="invalid-feedback"></p>
+                            <input id="contact-number" type="tel" placeholder="e.g: 0489669541" pattern="0[0-9]{9}">
+                            <p class="invalid-feedback" id="contact-number-error"></p>
                         </div>
                     </div>
                 </div>
@@ -67,24 +68,24 @@
                         <div class="form-block">
                             <p class="form-text">Address Line 1</p>
                             <input id="address" type="text" required>
-                            <p class="invalid-feedback"></p>
+                            <p class="invalid-feedback" id="address-error"></p>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-block">
                             <p class="form-text">Town/Suburban</p>
-                            <input id="last-name" type="text" required>
-                            <p class="invalid-feedback"></p>
+                            <input id="town" type="text" required>
+                            <p class="invalid-feedback" id="town-error"></p>
                         </div>
                         <div class="form-block">
                             <p class="form-text">State</p>
-                            <input id="town" type="text" required minlength="3" maxlength="3" size="3">
-                            <p class="invalid-feedback"></p>
+                            <input id="state" type="text" placeholder="e.g: VIC" minlength="3" maxlength="3" size="3">
+                            <p class="invalid-feedback" id="state-error"></p>
                         </div>
                         <div class="form-block">
                             <p class="form-text">Postal Code</p>
-                            <input id="poskod" type="number" required minlength="4" maxlength="4" size="4">
-                            <p class="invalid-feedback"></p>
+                            <input id="postal-code" type="number" placeholder="e.g: 4896" required minlength="4" maxlength="4" size="4">
+                            <p class="invalid-feedback" id="postal-code-error"></p>
                         </div>
                     </div>
                 </div>
@@ -104,20 +105,20 @@
                     <div class="form-row">
                         <div class="form-block">
                             <p class="form-text">Card Number</p>
-                            <input id="card-number" type="number" placeholder="e.g: 1235-9874-5463-2245" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}">
-                            <p class="invalid-feedback"></p>
+                            <input id="card-number" type="text" placeholder="e.g: 1235-9874-5463-2245" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}">
+                            <p class="invalid-feedback" id="card-number-error"></p>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-block">
                             <p class="form-text">Expiration Date</p>
                             <input id="expiry-date" type="text" placeholder="eg.: 05/29">
-                            <p class="invalid-feedback"></p>
+                            <p class="invalid-feedback" id="expiry-date-error"></p>
                         </div>
                         <div class="form-block">
                             <p class="form-text">CVV</p>
                             <input id="cvv" type="number" placeholder="e.g: 544" minlength="3" maxlength="3" size="3">
-                            <p class="invalid-feedback"></p>
+                            <p class="invalid-feedback" id="cvv-error"></p>
                         </div>
                     </div>
                 </div>
@@ -181,10 +182,8 @@
                     </div>
                 </div>
             </div>
-            <a href="confirmation.html" id="confirm-payment">
-                <!--button-->
-                <button class="confirm-payment-btn">Confirm Payment</button>
-            </a>
+            <!--button-->
+            <button class="confirm-payment-btn" id="confirm-payment">Confirm Payment</button>
         </section>
     </div>
     <script src="script.js"></script>

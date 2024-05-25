@@ -1,0 +1,528 @@
+/* Background */
+body:not(#landing) {
+    background-image: url("../.res/background.png");
+    background-position: center 0;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    width: 100vw;
+    margin: 0;
+}   
+
+#landing {
+    background-color: #F7F7F9;
+    margin: 0;
+}
+
+#landing-background {
+    background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 15%, rgba(0,0,0,0) 25%), url("../.res/background.png");
+}
+
+/* General*/
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+
+.product-card, .product-card-with-button {
+    width: 17.4375rem;
+    height: 22rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 10%);
+}
+
+.product-card-with-button {
+    height: 24.0625rem;
+}
+
+.product-card-button, .menu-button {
+    border-radius: 100rem;
+    background: transparent;
+    border: 0.1rem solid #FFF;
+}
+
+.promotion, .promotion-bigger{
+    background-color: #105BEC;
+    border-radius: 0.2rem;
+}
+
+/* Landing Page */
+.hero-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.award {
+    background-color: black;
+}
+
+.award-image {
+    
+    width: 150px;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+}
+
+.block-image {
+    border-radius: 1em;
+    object-fit: cover;
+}
+
+#mario {
+    width: calc(50vw - 5em);
+    height: calc(50vw - 5em);
+}
+
+#console-yellow {
+    width: calc(50vw - 5em);
+    height: calc((50vw - 5em)/2 - 0.5em);
+}
+
+#street-fighter {
+    width: calc((50vw - 5em)/2 - 0.5em);
+    height: calc((50vw - 5em)/2 - 0.5em);
+    margin-right: 1em;
+}
+
+#pokemon {
+    width: calc((50vw - 5em)/2 - 0.5em);
+    height: calc((50vw - 5em)/2 - 0.5em);
+}
+
+.categories {
+    background: linear-gradient(180deg, rgba(43,2,74,.5) 0%, rgba(72,35,172,.5) 100%, rgba(83,15,228,.5) 100%);
+}
+
+.image-holder {
+    height: 13.75rem;
+    border-radius: 0.9375rem 0.9375rem 0rem 0rem;
+}  
+
+.art-holder {
+    width: 8.125rem;
+    height: 8.125rem;
+    border-radius: 50%;
+}
+
+#Xbox-Series-X {
+    background: url("../.res/xbox-card.jpeg") -395.136px -0.042px / 265.813% 100% no-repeat;
+}
+
+#Made-in-Abyss-Figurine {
+    background: url("../.res/made-in-abyss.jpg") center / cover;
+}
+
+#Persona-3 {
+    background: url("../.res/persona-3.webp") center / cover;
+}
+
+#Nintendo-Switch-Lite {
+    background: url("../.res/nintendo-switch-light.jpg") center / cover;
+}
+
+#Atelier-Ayesha-DX {
+    background: url("../.res/atelier-ayesha-dx.jpg") center / cover;
+}
+
+#Hollow-Knight {
+    background: url("../.res/hollow-knight.webp") 0px -22.621px/ cover;
+}
+
+#Mewtwo-V-Card {
+    background: url("../.res/mewtwo-v-card.jpg") center / cover;
+}
+
+#Chainsaw-Man-T-Shirt {
+    background: url("../.res/chainsaw-man-T-shirt.webp") center / cover;
+}
+
+#Consoles {
+    background: url("../.res/category-console.PNG") center / cover, #b382ff;
+}
+
+#Games {
+    background: url("../.res/category-games.PNG") center / cover, #6F30E8;
+}
+
+#Collectible-cards {
+    background: url("../.res/category-collectible-cards.PNG") center / cover, #3220A0;
+}
+
+#Figurines {
+    background: url("../.res/category-figurine.PNG") center / contain no-repeat, #1E0C79;
+}
+
+#Old-Consoles {
+    background: url("../.res/category-old-consoles.PNG") center / 80% 80% no-repeat, #28007E;
+}
+
+#Fashion {
+    background: url("../.res/category-fashion.PNG") center / cover, #34077F;
+}
+
+.discover {
+    background-color: black;
+}
+
+.discover-holder {
+    width: 8.125rem;
+    height: 8.125rem;
+    border-radius: 2em;
+    border: 0.1em solid white;
+    background-position: center;
+    background-size: cover;
+}
+
+#Gold-Coast {
+    background-image: url("../.res/discover-gold-coast.jpg");
+}
+
+#Sydney {
+    background-image: url("../.res/discover-sydney.webp");
+}
+
+#Brisbane {
+    background-image: url("../.res/discover-brisbane.webp");
+}
+
+#Melbourne {
+    background-image: url("../.res/discover-melbourne.png");
+}
+
+#Thailand {
+    background-image: url("../.res/discover-thailand.png");
+}
+
+.join-community {
+    background: linear-gradient(180deg, rgba(18,1,41,.8) 0%, rgba(0,0,0,.8) 100%), url("../.res/mario-join.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+.join-button {
+    border-radius: 6.25rem;
+    border: white solid 0.1rem;
+    background-color: transparent;
+}
+
+/* Product list*/
+.sort {
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.10);
+}
+
+.product-list-side-menu{
+    width: 100% - 10rem;
+
+}
+
+.side-menu {
+    width: 20%;
+}
+
+.side-menu-item {
+    width: 100% - 2rem;
+    height: 3rem;
+    background: rgba(255, 255, 255, 0.10);
+    border-bottom: 0.2rem solid rgba(255, 255, 255, 0.10);
+}
+
+#first-item {
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.side-menu-item-2 {
+    width: 100% -2rem;
+    background: rgba(255, 255, 255, 0.10);
+}
+
+.catalouge {
+    width: 75%;
+}
+
+.product-list {
+    width: 100%;
+}
+
+#Playstation-5-Joycon {
+    background: url("../.res/Playstation-5-Joycon.jpg") center / cover;
+}
+
+#Nintendo-NES-Console-1 {
+    background: url("../.res/Nintendo-NES-Console-1.jpg") center / cover;
+}
+
+#Playstation-5-Console {
+    background: url("../.res/Playstation-5-Console.jpg") center / cover;
+}
+
+#Nintendo-Switch-OLED {
+    background: url("../.res/Nintendo-Switch-OLED.webp") center / cover;
+}
+
+#Nintendo-Switch-Sports {
+    background: url("../.res/Nintendo-Switch-Sports.webp") center / cover;
+}
+
+#Handheld-Retro-Video {
+    background: url("../.res/Handheld-Retro-Video.webp") center / cover;
+}
+
+#Retro-Mini-Tv {
+    background: url("../.res/Retro-Mini-Tv.jpg") center / cover;
+}
+
+#US-Sega-Saturn-Console {
+    background: url("../.res/US-Sega-Saturn-Console.jpg") center / cover;
+}
+   
+#Switch-OLED-Model {
+    background: url("../.res/Switch-OLED-Model.jpg") center / cover;
+}
+
+#Nintendo-Wii-Console {
+    background: url("../.res/Nintendo-Wii-Console.webp") center / cover;
+}
+
+.numbering {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+#n2 {
+    background: rgba(255, 255, 255, 20%);
+}
+
+/* Product Page */
+.grid-item {
+    height: 100%;
+    width: 13.0625rem;
+    border-radius: 0.5rem;
+}
+
+#grid-item-1 {
+    background: url(../.res/Xbox-1.jpg) center / contain no-repeat, #FFF;
+}
+
+#grid-item-2 {
+    background: url(../.res/Xbox-2.jpg) center / cover no-repeat, #FFF;
+}
+
+#grid-item-3 {
+    background: url(../.res/xbox-card.jpeg) -151.506px 0px / 196.641% 100% no-repeat, #DDE1E6;
+    
+}
+
+#grid-item-4 {
+    background: url(../.res/xbox-card.jpeg) -730.008px -5px / 280.752% 101.445% no-repeat, #DDE1E6;
+    width: 30.375rem;
+    height: 32.0625rem;
+    border-radius: 1rem;
+}
+
+#grid-item-2-1 {
+    background: url(../.res/nintendo-1.jpg) center / contain no-repeat, #FFF;
+}
+
+#grid-item-2-2 {
+    background: url(../.res/nintendo-2.jpg) center / cover no-repeat, #FFF;
+}
+
+#grid-item-2-3 {
+    background: url(../.res/nintendo-3.jpg) center / cover no-repeat, #DDE1E6;
+}
+
+#grid-item-2-4 {
+    background: url(../.res/nintendo-switch-light.jpg) center/ cover no-repeat, #DDE1E6;
+    width: 30.375rem;
+    height: 32.0625rem;
+    border-radius: 1rem;
+}
+
+.text, .confirm-payment-btn, #confirm-payment{
+    width: 100%;
+}
+
+.text, .short-info {
+    height: 100%;
+}
+
+.product-button {
+    border-radius: 0.5rem;
+    background: #FFF;
+}
+
+.quantity, .product-description{
+    background: rgba(255, 255, 255, 0.10);
+}
+
+.quantity {
+    border-radius: 0.5rem;
+}
+
+#selected {
+    background: rgb(255, 255, 255);
+    color: #000000;
+}
+
+/* Checkout*/
+#checkout-close {
+    width: 3rem;
+    height: 3rem;
+}
+
+.checkout-container {
+    width: 60%;
+}
+
+input {
+    border-radius: 0.5rem;
+}
+
+input[type="radio"] {
+    appearance: none;
+    border: #FFF 0.1rem solid;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+}
+
+input[type="radio"]:checked {
+    background-image: url("../.res/Icons/check.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#placeholder {
+    width: 80%;
+    height: 100%;
+    border-radius: 1.875rem;
+    border: 2px solid #F2F4F8; 
+    background-color: transparent;
+}
+
+.expiration{
+    width: 100%;
+}
+
+.summary {
+    width: 40%;
+}
+
+.shopping-cart-container {
+    border: 0.1rem solid #F2F4F8;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.10);
+    width: 100% - 1.5rem;
+    height: 100%;
+}
+
+.product-container {
+    height: 24.0625rem;
+}
+
+.confirm-payment-btn {
+    border-radius: 0.5rem;
+    background-color: transparent;
+    border: 0.2rem solid #ffffff; 
+}
+
+/* Order Confirmation */
+.confirmation-function-buttons {
+    width: 25%;
+}
+
+.form-row, .form-block {
+    width: 100%;
+}
+
+#back-home-button, #order-track-button {
+    width: 100%;
+    border-radius: 0.5rem;
+    background-color: white;
+    border: 0.2rem solid #ffffff; 
+}
+
+#order-track-button {
+    background-color: transparent;
+}
+
+/* Cart Overlay */
+#cart-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+    transition: all 0.5s ease-in-out;    
+}
+
+#cart-container{
+    width: 35%;
+    height: 90%;
+    background-size: cover;
+    background-image: linear-gradient(180deg, rgba(0,0,0,.5) 0%, rgba(0,0,0,.5) 50%, rgba(0,0,0,.5) 100%), url("../.res/background.png");
+    transition: right 0.5s ease-in-out;
+}
+
+.upper, .header, .checkout-details, .spacing, .checkout-btn {
+    width: 100%;
+} 
+
+.cart-item{
+    width: 90%;
+    border-bottom: 0.1rem solid #ffffff;
+}
+
+.cart-item-img {
+    min-width: 9rem;
+    min-height: 9rem;
+    border-radius: 0.5rem;
+}
+
+#Xbox-Series-X-cart {
+    background: url("../.res/xbox-card.jpeg") -197.641px 0px / 262.188% 100% no-repeat;
+}
+
+.cart-item-info {
+    width: 100%;
+    height: 100%;
+}
+
+#Apply {
+    width: 20%;
+    height: 100%;
+    border-radius: 6.25rem;
+    background: #F2F4F8;
+}
+
+.checkout-btn {
+    border-radius: 0.5rem;
+}
+
+/* Added to cart pop-up*/
+.added-cart-popup {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-content {
+    width: 27.125rem;
+    height: 27.125rem;
+    border-radius: 0.5rem;
+    background: #242424;
+}
+
+.continue-shopping {
+    width: 15.3125rem;
+    border-radius: 0.5rem;
+    background: #FFF;
+}
