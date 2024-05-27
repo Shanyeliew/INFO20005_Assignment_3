@@ -22,6 +22,10 @@ nav {
     align-self: stretch;
 }
 
+#menu {
+    display: none;
+}
+
 .top-left {
     display: flex;
     align-items: center;
@@ -138,6 +142,10 @@ nav {
     justify-content: flex-end;
     gap: 1rem;
 }
+#search-mobile {
+    display: none;
+}
+
 
 #cart, #cart-hide {
     width: 2.25rem;
@@ -160,7 +168,7 @@ nav {
     display: none;
 }
 
-#profile {
+.icon {
     width: 2.25rem;
     height: 2.25rem;
 }
@@ -169,7 +177,13 @@ nav {
     .menu {
         display: none;
     }
+    #menu {
+        display: flex;
+    }
     .search-overlay {
         display: none;
+    }
+    #search-mobile {
+        display: flex;
     }
 }

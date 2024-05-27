@@ -1,4 +1,9 @@
 /* General */
+a {
+    display: flex;
+    margin: 0;
+}
+
 .news, .sale, .categories, .discover,.join-community, .recommendations, .product-description, .toggle-menu{
     display: flex;
     flex-direction: column;
