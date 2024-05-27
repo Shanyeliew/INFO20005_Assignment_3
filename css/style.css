@@ -4,6 +4,7 @@ body:not(#landing) {
     background-position: center 0;
     background-attachment: scroll;
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100vw;
     margin: 0;
 }   
@@ -15,6 +16,7 @@ body:not(#landing) {
 
 #landing-background {
     background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 15%, rgba(0,0,0,0) 25%), url("../.res/background.png");
+    background-size: cover;
 }
 
 /* General*/
@@ -215,7 +217,7 @@ a:active {
 }
 
 /* Product list*/
-.sort {
+.sort, .filter-mobile {
     border-radius: 0.5rem;
     background: rgba(255, 255, 255, 0.10);
 }
@@ -422,7 +424,6 @@ input[type="radio"]:checked {
     border: 0.1rem solid #F2F4F8;
     border-radius: 1rem;
     background: rgba(255, 255, 255, 0.10);
-    width: 100% - 1.5rem;
     height: 100%;
 }
 
@@ -437,6 +438,16 @@ input[type="radio"]:checked {
 }
 
 /* Order Confirmation */
+.confirmation{
+    width: 100vw - 2rem;
+    height: 90vh;
+}
+
+#confirm-icon {
+    width: 12rem;
+    height: 12rem;
+}
+
 .confirmation-function-buttons {
     width: 25%;
 }
@@ -446,7 +457,6 @@ input[type="radio"]:checked {
 }
 
 #back-home-button, #order-track-button {
-    width: 100%;
     border-radius: 0.5rem;
     background-color: white;
     border: 0.2rem solid #ffffff; 
@@ -477,7 +487,6 @@ input[type="radio"]:checked {
 } 
 
 .cart-item{
-    width: 90%;
     border-bottom: 0.1rem solid #ffffff;
 }
 
@@ -493,7 +502,6 @@ input[type="radio"]:checked {
 
 .cart-item-info {
     width: 100%;
-    height: 100%;
 }
 
 #Apply {
@@ -522,7 +530,61 @@ input[type="radio"]:checked {
 }
 
 .continue-shopping {
-    width: 15.3125rem;
     border-radius: 0.5rem;
     background: #FFF;
+}
+
+/* Media queries for mobile size */
+@media screen and (max-width: 1000px){
+    .image-holder{
+        height: 8.5rem;
+    }
+
+    #Xbox-Series-X {
+        background: url("../.res/xbox-card.jpeg") -243.597px -0.026px / 265.813% 100% no-repeat;
+    }
+    
+    /* Product List */
+    .catalouge {
+        width: 100%;
+    }
+
+    .product-card-with-button {
+        width: 10.75rem;
+        height: 17.8125rem;
+    }
+
+    /* Checkout*/
+    .checkout-container {
+        width: 100%;
+    }
+    
+    .summary {
+        width: 100%;
+    }
+
+    .shopping-cart-container {
+        align-self: stretch;
+    }
+
+    /* Order Confirmation*/
+    #confirm-icon {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .confirmation-function-buttons {
+        width: 100%;
+    }
+
+    /* Cart Overlay */
+    #cart-container {
+        width: 75%;
+    }
+
+    /* Added-to-cart popup */
+    .popup-content {
+        width: 18rem;
+        height: 18rem;
+    }
 }

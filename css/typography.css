@@ -43,7 +43,7 @@ h3 {
     line-height: 110%;
 }
 
-.cart-title {
+.cart-title, #confirm{
     font-weight: 500;
 }
 
@@ -120,7 +120,7 @@ h3 {
 .sort-text {
     font-size: 1rem;
     font-weight: 400;
-    margin-right: 3rem;
+    margin-right: 1.5rem;
 }
 
 .product-button, #back-home-button, input, .continue-shopping, .checkout-btn, #Apply {
@@ -149,6 +149,53 @@ h3 {
     color: #d30000;
 }
 
+#title-mobile {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
 .status-text {
     color: #25DE38;
+}
+
+@media screen and (max-width: 1000px) {
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    .logo-text {
+        font-size: 1.125rem;
+        font-weight: 700;
+    }
+
+    .footer-logo-text {
+        font-size: 2.25rem;
+        font-weight: 700;
+    }
+
+    .product-category, .product-name, .continue-shopping {
+        font-size: 1rem;
+    }
+
+    .product.product-promotion, .product-card-button {
+        font-size: 0.75rem;
+    }
+
+    .product-price {
+        font-size: 1.25rem;
+    }
+
+    .cart-title, .added {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    #confirm {
+        font-size: 2rem;
+    }
+
+    #subtitle {
+        font-weight: 400;
+    
+    }
 }

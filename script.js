@@ -16,7 +16,7 @@ var item2 = document.getElementById('item-2');
 var count = 0;
 
 //variables for the checkout form validation
-var confirmPayment = document.getElementById('confirm-payment');
+var confirmPayment = document.querySelectorAll('.confirm-payment-btn');
 var firstName = document.getElementById('first-name');
 var lastName = document.getElementById('last-name');
 var email = document.getElementById('email');
@@ -53,7 +53,7 @@ if(window.location.href.indexOf('product_1.html') > -1 || window.location.href.i
     //Handle the cart overlay
     //open the cart overlay
     cartButton.addEventListener('click', function() {
-        cart.style.right = '0';
+        cart.style.right = '2%';
         cartOverlay.style.right = '0';
     });
 
@@ -140,6 +140,9 @@ if(window.location.href.indexOf('confirmation.html') > -1) {
         count = 0;
         localStorage.setItem('cartCount', count);   
         cartCount.textContent = count;
+
+        //go back to the home page
+        window.location.href = 'index.html';
     });
 }
 
@@ -162,72 +165,72 @@ window.onload = function() {
 //Form validation
 if(window.location.href.indexOf('checkout.html') > -1) {
     var invalidCount = 0;
-  
-    confirmPayment.addEventListener('click', function() {
+    for (var i = 0; i < confirmPayment.length; i++) {
+        confirmPayment[i].addEventListener('click', function() {
+            //clear all error messages
+            for (var i = 0; i < invalidFeedback.length; i++) {
+                invalidFeedback[i].textContent = '';
+            }
+    
+            //validate form fields
+            if(firstName.value === '') {
+                firstNameError.textContent = 'Please enter a valid first name';
+                invalidCount++;
+            }
+            if(lastName.value === '') {
+                lastNameError.textContent = 'Please enter a valid last name';
+                invalidCount++;
+            }
+            if(email.value === '' || email.value.indexOf('@') === -1 || email.value.indexOf('.') === -1){
+                emailError.textContent = 'Please enter a valid email';
+                invalidCount++;
+            }
+            if(contactNumber.value === '' || isNaN(contactNumber.value) || contactNumber.value.length < 10 
+            || contactNumber.value.length > 10 || contactNumber.value.charAt(0) !== '0'){
+                contactNumberError.textContent = 'Please enter a valid contact number';
+                invalidCount++;
+            }
+            if(address.value === '') {
+                addressError.textContent = 'Please enter a valid address';
+                invalidCount++;
+            }
+            if(town.value === '') {
+                townError.textContent = 'Please enter a valid town';
+                invalidCount++;
+            }
+            if(state.value === '' || state.value.length > 3 || state.value.length < 3 
+            || state.value !== state.value.toUpperCase()) {
+                stateError.textContent = 'Please enter a valid state';
+                invalidCount++;
+            }
+            if(postalCode.value === '' || isNaN(postalCode.value) || postalCode.value.length < 4 
+            || postalCode.value.length > 4){
+                postalCodeError.textContent = 'Please enter a valid postal code';
+                invalidCount++;
+            }
+            if(cardNumber.value === '' || cardNumber.value.length < 19 || cardNumber.value.length > 19 
+            || cardNumber.value.charAt(4) !== '-' || cardNumber.value.charAt(9) !== '-' || cardNumber.value.charAt(14) !== '-'){
+                cardNumberError.textContent = 'Please enter a valid card number';
+                invalidCount++;
+            }
+            if(expiryDate.value === '' || expiryDate.value.length < 5 || expiryDate.value.length > 5 
+            || expiryDate.value.charAt(2) !== '/' || (expiryDate.value.charAt(0) !== '0' && expiryDate.value.charAt(0) !== '1') 
+            || (expiryDate.value.charAt(0) == '1' && expiryDate.value.charAt(1) !== '1' && expiryDate.value.charAt(1) !== '2')){
+                expiryDateError.textContent = 'Please enter a valid expiry date';
+                invalidCount++;
+            }
+            if(cvv.value === '' || isNaN(cvv.value) || cvv.value.length < 3 || cvv.value.length > 3){
+                cvvError.textContent = 'Please enter a valid cvv';
+                invalidCount++;
+            }
 
-        //clear all error messages
-        for (var i = 0; i < invalidFeedback.length; i++) {
-            invalidFeedback[i].textContent = '';
-        }
-        
-        //validate form fields
-        if(firstName.value === '') {
-            firstNameError.textContent = 'Please enter a valid first name';
-            invalidCount++;
-        }
-        if(lastName.value === '') {
-            lastNameError.textContent = 'Please enter a valid last name';
-            invalidCount++;
-        }
-        if(email.value === '' || email.value.indexOf('@') === -1 || email.value.indexOf('.') === -1){
-            emailError.textContent = 'Please enter a valid email';
-            invalidCount++;
-        }
-        if(contactNumber.value === '' || isNaN(contactNumber.value) || contactNumber.value.length < 10 
-        || contactNumber.value.length > 10 || contactNumber.value.charAt(0) !== '0'){
-            contactNumberError.textContent = 'Please enter a valid contact number';
-            invalidCount++;
-        }
-        if(address.value === '') {
-            addressError.textContent = 'Please enter a valid address';
-            invalidCount++;
-        }
-        if(town.value === '') {
-            townError.textContent = 'Please enter a valid town';
-            invalidCount++;
-        }
-        if(state.value === '' || state.value.length > 3 || state.value.length < 3 
-        || state.value !== state.value.toUpperCase()) {
-            stateError.textContent = 'Please enter a valid state';
-            invalidCount++;
-        }
-        if(postalCode.value === '' || isNaN(postalCode.value) || postalCode.value.length < 4 
-        || postalCode.value.length > 4){
-            postalCodeError.textContent = 'Please enter a valid postal code';
-            invalidCount++;
-        }
-        if(cardNumber.value === '' || cardNumber.value.length < 19 || cardNumber.value.length > 19 
-        || cardNumber.value.charAt(4) !== '-' || cardNumber.value.charAt(9) !== '-' || cardNumber.value.charAt(14) !== '-'){
-            cardNumberError.textContent = 'Please enter a valid card number';
-            invalidCount++;
-        }
-        if(expiryDate.value === '' || expiryDate.value.length < 5 || expiryDate.value.length > 5 
-        || expiryDate.value.charAt(2) !== '/' || (expiryDate.value.charAt(0) !== '0' && expiryDate.value.charAt(0) !== '1') 
-        || (expiryDate.value.charAt(0) == '1' && expiryDate.value.charAt(1) !== '1' && expiryDate.value.charAt(1) !== '2')){
-            expiryDateError.textContent = 'Please enter a valid expiry date';
-            invalidCount++;
-        }
-        if(cvv.value === '' || isNaN(cvv.value) || cvv.value.length < 3 || cvv.value.length > 3){
-            cvvError.textContent = 'Please enter a valid cvv';
-            invalidCount++;
-        }
+            //redirect to confirmation page if all fields are valid
+            if(invalidCount === 0) {
+                window.location.href = 'confirmation.html';
+            }
 
-        //redirect to confirmation page if all fields are valid
-        if(invalidCount === 0) {
-            window.location.href = 'confirmation.html';
-        }
-
-        //reset invalid count
-        invalidCount = 0;
-    });
+            //reset invalid count
+            invalidCount = 0;
+        });
+    }
 }

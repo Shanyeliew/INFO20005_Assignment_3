@@ -15,7 +15,7 @@
 <body>
     <nav>
         <div class="top">
-            <img src=".res/Icons/menu.png" alt="menu" class="icon" id="menu">
+            <img src=".res/Icons/menu.png" alt="menu" class="icons" id="menu">
             <div class="top-left">
                 <a href="index.html">
                     <div class="logo">
@@ -72,13 +72,13 @@
                     </div>
                 </div>
                 <div class="button">
-                    <img src=".res/Icons/search-mobile.png" alt="search" class="icon" id="search-mobile">
-                    <div id="cart" class="icon">
-                        <img src=".res/Icons/cart.png" alt="Cart">
+                    <img src=".res/Icons/search-mobile.png" alt="search" class="icons" id="search-mobile">
+                    <div id="cart" class="icons">
+                        <img src=".res/Icons/cart.png" alt="Cart" id="cart-icon">
                         <span id="cart-count">0</span>
                     </div>
-                    <div class="icon">
-                        <img src=".res/Icons/profile.png" alt="Profile">
+                    <div class="icons">
+                        <img src=".res/Icons/profile.png" alt="Profile" id="profile-icon">
                     </div>
                 </div>
             </div>
@@ -87,7 +87,7 @@
     <div class="added-cart-popup">
         <div class="popup-content">
             <img src=".res/Icons/bag-check.png" alt="">
-            <h2>Item Added!</h2>
+            <h2 class="added">Item Added!</h2>
             <button class="continue-shopping">Continue Shopping</button>
         </div>
     </div>
@@ -96,6 +96,11 @@
     </section>
     <section class="function">
         <p class="filter">Filters</p>
+        <div class="filter-mobile">
+            <img src=".res/Icons/setting.png" alt="" class="sort-icon">
+            <p class="sort-text">Filters</p>
+            <img src=".res/Icons/chevron_down.png" alt="" class="sort-icon">
+        </div>
         <div class="sort">
             <img src=".res/Icons/setting.png" alt="" class="sort-icon">
             <p class="sort-text">Sorting</p>
@@ -373,16 +378,16 @@
                 <span class="numbering">
                     <p class="number">3</p>
                 </span>
-                <span class="numbering">
+                <span class="numbering" id="four">
                     <p class="number">4</p>
                 </span>
-                <span class="numbering">
+                <span class="numbering" id="five">
                     <p class="number">5</p>
                 </span>
                 <span class="numbering">
                     <p class="number">...</p>
                 </span>
-                <span class="numbering">
+                <span class="numbering" id="eleven">
                     <p class="number">11</p>
                 </span>
                 <img src=".res/Icons/chevron-right.png" alt="">

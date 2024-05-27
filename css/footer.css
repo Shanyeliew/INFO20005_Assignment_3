@@ -68,8 +68,23 @@ hr {
 .policy {
     display: flex;
     align-items: center;
+    gap: 2rem;
 }
 
-.policy-item {
-    margin-left: 3rem;
+@media screen and (max-width: 1000px) {
+    footer {
+        padding: 3rem 1rem;
+    }
+    
+    .head {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+    
+    .bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
 }

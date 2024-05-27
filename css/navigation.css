@@ -11,9 +11,8 @@ nav {
     top: 2rem;
     margin-left: 2.5rem;
     margin-right: 2.5rem;
-    margin-top: 2rem;
-    
 }
+
 .top {
     padding: 1.5rem 2.5rem;
     display: flex;
@@ -56,7 +55,7 @@ nav {
 
 .icon {
     width: 1.5rem;
-    height: 1.5rem;
+    height: 1.5rem;  
 }
 
 .search-overlay {
@@ -142,14 +141,19 @@ nav {
     justify-content: flex-end;
     gap: 1rem;
 }
+
 #search-mobile {
     display: none;
 }
 
 
 #cart, #cart-hide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 2.25rem;
     height: 2.25rem;
+    margin-right: -1rem ;
 }
 
 #cart-hide {
@@ -162,18 +166,26 @@ nav {
     border-radius: 50%;
     padding: 0.2rem 0.4rem;
     position: relative;
-    top: -3rem;
-    left: 1.4rem;
+    top: -0.6rem;
+    right: 0.9rem;
     align-items: center;
     display: none;
 }
 
-.icon {
+.icons {
     width: 2.25rem;
     height: 2.25rem;
 }
 
 @media screen and (max-width: 1000px) {
+    nav {
+        padding: 0 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .top {
+        padding: 0.5rem 1rem;
+    }
     .menu {
         display: none;
     }
@@ -185,5 +197,19 @@ nav {
     }
     #search-mobile {
         display: flex;
+    }
+    .icons {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    #cart-icon, #profile-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    #cart-count {
+        padding: 0.1rem 0.3rem;
+        top: -0.4rem;
+        right: 0.6rem;
     }
 }

@@ -15,7 +15,8 @@
 <body>
     <!--Title-->
     <section class="title-back">
-        <h1>Checkout</h1>
+        <p id="title-mobile">Check Out</p>
+        <h1 id="title">Check Out</h1>
         <a href="index.html">
             <img src=".res/Icons/close.png" alt="" id="checkout-close">
         </a>
@@ -55,13 +56,15 @@
             <!--Shipping Details-->
             <div class="container">
                 <p class="cart-title">Shipping Details</p>
-                <div class="radio-text">
-                    <input type="radio" id="choice-1" name="delivery" value="standard" checked />
-                    <label for="choice-1">Standard Delivery</label>
-                </div>
-                <div class="radio-text">
-                    <input type="radio" id="choice-2" name="delivery" value="express" />
-                    <label for="choice-2">Express Delivery</label>
+                <div class="radio-group">
+                    <div class="radio-text">
+                        <input type="radio" id="choice-1" name="delivery" value="standard" checked />
+                        <label for="choice-1">Standard Delivery</label>
+                    </div>
+                    <div class="radio-text">
+                        <input type="radio" id="choice-2" name="delivery" value="express" />
+                        <label for="choice-2">Express Delivery</label>
+                    </div>
                 </div>
                 <div class="form">
                     <div class="form-row">
@@ -93,13 +96,15 @@
             <!--Payment Method-->
             <div class="container">
                 <p class="cart-title">Payment Method</p>
-                <div class="radio-text">
-                    <input type="radio" id="choice-3" name="payment" value="credit-card" checked />
-                    <label for="choice-3">Credit Card</label>
-                </div>
-                <div class="radio-text">
-                    <input type="radio" id="choice-4" name="payment" value="paypal" />
-                    <label for="choice-4">Paypal</label>
+                <div class="radio-group">
+                    <div class="radio-text">
+                        <input type="radio" id="choice-3" name="payment" value="credit-card" checked />
+                        <label for="choice-3">Credit Card</label>
+                    </div>
+                    <div class="radio-text">
+                        <input type="radio" id="choice-4" name="payment" value="paypal" />
+                        <label for="choice-4">Paypal</label>
+                    </div>
                 </div>
                 <div class="form">
                     <div class="form-row">
@@ -123,6 +128,8 @@
                     </div>
                 </div>
             </div>
+                        <!--button-->
+                        <button class="confirm-payment-btn" id="confirm-payment-mobile">Confirm Payment</button>
         </section>
         <!--Shopping Cart-->
         <section class="summary">
