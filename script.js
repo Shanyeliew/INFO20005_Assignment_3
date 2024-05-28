@@ -47,13 +47,18 @@ var cvvError = document.getElementById('cvv-error');
 var search = document.getElementById('search');
 var dropdown = document.querySelector('.dropdown');
 
+//variables for the search bar dordown in mobile view
+var searchMobile = document.getElementById('search-mobile');
+var dropdownMobile = document.querySelector('.dropdown-mobile');
+var exit = document.querySelector('.exit-zone');
+
 if(window.location.href.indexOf('product_1.html') > -1 || window.location.href.indexOf('product_2.html') > -1
 || window.location.href.indexOf('product_list.html') > -1 || window.location.href.indexOf('index.html') > -1) {
     
     //Handle the cart overlay
     //open the cart overlay
     cartButton.addEventListener('click', function() {
-        cart.style.right = '2%';
+        cart.style.right = '0%';
         cartOverlay.style.right = '0';
     });
 
@@ -89,6 +94,14 @@ if(window.location.href.indexOf('product_1.html') > -1 || window.location.href.i
         if (event.target !== search) {
             dropdown.style.display = 'none';
         }
+    });
+
+    //Handle the search bar dropdown in mobile view
+    searchMobile.addEventListener('click', function() {
+        dropdownMobile.style.top = '0';
+    });
+    exit.addEventListener('click', function() {
+        dropdownMobile.style.top = '-100%';
     });
 }
 

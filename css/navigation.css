@@ -83,6 +83,41 @@ nav {
     outline: none;
 }
 
+#dropdown-search-mobile {
+    background-image: url('../.res/Icons/search-mobile.png');
+    background-repeat: no-repeat;
+    background-position: center left 1rem;
+    background-color: #242424;
+    padding: 1rem 1rem 1rem 4rem;
+    display: flex;
+    align-items: center;
+    width: stretch;
+    height: stretch;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #FFF;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#dropdown-search-mobile::placeholder {
+    color: #FFF;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+#dropdown-search-mobile:focus {
+    outline: none;
+}
+
+.exit-zone {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
 .dropdown {
     display: none;
     flex-direction: column;
@@ -98,6 +133,22 @@ nav {
     width: 23rem;
 }
 
+.dropdown-mobile {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: -100%;
+    background-color: #242424;
+    align-items: flex-start;
+    gap: 2rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+}
+
 .dropdown-category, .dropdown-product {
     display: flex;
     flex-direction: column;
@@ -107,6 +158,8 @@ nav {
 .dropdown-item, .dropdown-title {
     padding: 1rem 1.25rem;
     border-bottom: 2px solid rgba(255, 255, 255, 0.50);
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .dropdown-title {
@@ -120,6 +173,8 @@ nav {
     border-bottom: 2px solid rgba(255, 255, 255, 0.50);
     align-items: center;
     justify-content: flex-start;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 #Xbox-Series-X-search {
@@ -164,7 +219,7 @@ nav {
     background-color: #C80000;
     color: white;
     border-radius: 50%;
-    padding: 0.2rem 0.4rem;
+    padding: 0.4rem;
     position: relative;
     top: -0.6rem;
     right: 0.9rem;
@@ -208,8 +263,8 @@ nav {
     }
 
     #cart-count {
-        padding: 0.1rem 0.3rem;
+        padding: 0.2rem;
         top: -0.4rem;
-        right: 0.6rem;
+        right: 0.7rem;
     }
 }

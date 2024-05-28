@@ -177,7 +177,7 @@ h3 {
         font-size: 1rem;
     }
 
-    .product.product-promotion, .product-card-button {
+    .product-promotion, .product-promotion-bigger, .product-card-button {
         font-size: 0.75rem;
     }
 
@@ -185,17 +185,20 @@ h3 {
         font-size: 1.25rem;
     }
 
+    .status-text, .checkout-btn, .product-description-text, .short-info, .product-button {
+        font-size: 0.875rem;
+    }
+
     .cart-title, .added {
         font-size: 1.5rem;
         font-weight: 500;
     }
 
-    #confirm {
+    #confirm, h2 {
         font-size: 2rem;
     }
 
     #subtitle {
         font-weight: 400;
-    
     }
 }

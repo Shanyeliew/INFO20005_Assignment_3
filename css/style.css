@@ -68,7 +68,6 @@ a:active {
 }
 
 .award-image {
-    
     width: 150px;
     margin-left: 2.5em;
     margin-right: 2.5em;
@@ -105,6 +104,7 @@ a:active {
 }
 
 .image-holder {
+    width: 17.4375rem;
     height: 13.75rem;
     border-radius: 0.9375rem 0.9375rem 0rem 0rem;
 }  
@@ -306,8 +306,8 @@ a:active {
 
 /* Product Page */
 .grid-item {
-    height: 100%;
     width: 13.0625rem;
+    height: 9.125rem;
     border-radius: 0.5rem;
 }
 
@@ -325,7 +325,7 @@ a:active {
 }
 
 #grid-item-4 {
-    background: url(../.res/xbox-card.jpeg) -730.008px -5px / 280.752% 101.445% no-repeat, #DDE1E6;
+    background: url(../.res/xbox-pp.png) center / cover no-repeat, #DDE1E6;
     width: 30.375rem;
     height: 32.0625rem;
     border-radius: 1rem;
@@ -348,14 +348,6 @@ a:active {
     width: 30.375rem;
     height: 32.0625rem;
     border-radius: 1rem;
-}
-
-.text, .confirm-payment-btn, #confirm-payment{
-    width: 100%;
-}
-
-.text, .short-info {
-    height: 100%;
 }
 
 .product-button {
@@ -505,7 +497,7 @@ input[type="radio"]:checked {
 }
 
 #Apply {
-    width: 20%;
+    width: 30%;
     height: 100%;
     border-radius: 6.25rem;
     background: #F2F4F8;
@@ -536,8 +528,9 @@ input[type="radio"]:checked {
 
 /* Media queries for mobile size */
 @media screen and (max-width: 1000px){
-    .image-holder{
+    .product-card-with-button > .image-holder {
         height: 8.5rem;
+        width: 10.75rem;
     }
 
     #Xbox-Series-X {
@@ -555,6 +548,11 @@ input[type="radio"]:checked {
     }
 
     /* Checkout*/
+    #checkout-close {
+        width: 2rem;
+        height: 2rem;
+    }
+
     .checkout-container {
         width: 100%;
     }
@@ -579,7 +577,8 @@ input[type="radio"]:checked {
 
     /* Cart Overlay */
     #cart-container {
-        width: 75%;
+        width: 95%;
+        height: 100%;
     }
 
     /* Added-to-cart popup */
@@ -587,4 +586,12 @@ input[type="radio"]:checked {
         width: 18rem;
         height: 18rem;
     }
+}
+
+@media screen and (max-width: 400px){
+    /* Cart Overlay */
+    #cart-container {
+        width: 93%;
+    }
+
 }
