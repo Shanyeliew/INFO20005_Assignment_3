@@ -247,29 +247,10 @@ a {
     align-items: center;
 }
 
-#grid-item-2-1 {
-    grid-column: 1;
-    grid-row: 1 ;
-}
-
-#grid-item-2-2 {
-    grid-column: 1;
-    grid-row: 2;
-}
-
-#grid-item-2-3 {
-    grid-column: 1;
-    grid-row: 3; 
-}
-
-#grid-item-2-4 {
-    grid-column: 2 / span 3;
-    grid-row: 1 / span 3;
-}
-
 .text {
     display: flex;
     flex-direction: column;
+    align-self: stretch;
     gap: 1rem;
 }
 
@@ -329,6 +310,13 @@ a {
 
 .recommendations {
     align-items: flex-start;
+}
+
+.product-container {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /*Checkout*/
@@ -639,6 +627,20 @@ input[type="radio"] {
 
 /* Media queries for mobile size */
 @media screen and (max-width: 1000px) {
+    /* Landing Page */
+    .news, .sale, .categories, .discover, .join-community {
+        padding: 2rem 1rem;
+    }
+
+    .categories {
+        gap: 1rem;
+    }
+
+    .join-community {
+        padding: 3rem 1rem;
+        gap: 2rem;
+    }
+    
     /* Product List */
     .title {
         padding: 5rem 1rem 2.5rem 1rem;
@@ -700,15 +702,30 @@ input[type="radio"] {
     }
 
     .grid-item {
-        width: 6.0625rem;
+        width: 7.0625rem;
         height: 5.3125rem;
         border-radius: 0.25rem;
-    
+    }
+
+    #grid-item-3 {
+        background: url("../.res/xbox-card.jpeg") -87.43px 0px / 198.982% 100% no-repeat;
     }
 
     #grid-item-4 {
-      width: 100%;
+      width: 100vw;
       height: 17.5rem;
+      margin-left: -1rem;
+      margin-right: -1rem;
+      border-radius: 0;
+      background: url("../.res/xbox-card.jpeg") -322.565px 0px/ cover no-repeat; 
+    }
+
+    #grid-item-2-4 {
+        width: 100vw;
+        height: 17.5rem;
+        margin-left: -1rem;
+        margin-right: -1rem;
+        border-radius: 0;
     }
 
     .function-buttons {

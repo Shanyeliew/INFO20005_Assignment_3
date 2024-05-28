@@ -185,7 +185,8 @@ h3 {
         font-size: 1.25rem;
     }
 
-    .status-text, .checkout-btn, .product-description-text, .short-info, .product-button {
+    .status-text, .checkout-btn, .product-description-text, .short-info,
+     .product-button, .menu-button {
         font-size: 0.875rem;
     }
 

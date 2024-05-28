@@ -368,6 +368,10 @@ a:active {
     color: #000000;
 }
 
+.product-container {
+    width: 100%;
+}
+
 /* Checkout*/
 #checkout-close {
     width: 3rem;
