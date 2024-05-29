@@ -15,9 +15,10 @@ a {
 
 .product-group, .category-group, .discover-group {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     align-self: stretch;
     justify-content: space-between;
+    gap: 1rem;
     overflow-y: hidden;
     overflow-x: auto;
 }
@@ -26,8 +27,6 @@ a {
     display: inline;
     flex-direction: column;
     justify-content: flex-start;
-    margin-left: 1rem;
-    margin-right: 1rem;
 }
 
 .product-card-with-button {
@@ -61,6 +60,7 @@ a {
     justify-content: center;
     margin: 0;
     padding: 2.5rem 1rem;
+    gap: 5rem;
 }
 
 .block {
@@ -68,6 +68,7 @@ a {
     justify-content: center;
     align-items: center;
     padding: 2.5rem 5rem;
+    gap: 1rem;
 }
 
 .block-group {
@@ -75,14 +76,14 @@ a {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 1rem;
+    gap: 1rem;
 }
 
 .block-group-2 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 1rem;
+    gap: 1rem;
 }
 
 .image-holder {
@@ -116,6 +117,7 @@ a {
     align-items: center;
     margin-right: 1rem;
     margin-left: 1rem;
+    gap: 1rem;
 }
 
 .join-community {
@@ -551,6 +553,7 @@ input[type="radio"] {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    margin-top: auto;
 }
 
 .promo-code {
@@ -626,19 +629,44 @@ input[type="radio"] {
 }
 
 /* Media queries for mobile size */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
     /* Landing Page */
-    .news, .sale, .categories, .discover, .join-community {
+    .award, .news, .sale, .categories, .discover, .join-community {
         padding: 2rem 1rem;
+        gap: 2rem;
     }
 
-    .categories {
+    .hero {
+        margin-top: 2rem;
+    }
+
+    .block {
+        padding: 2rem 1rem;
         gap: 1rem;
+        flex-direction: column-reverse;
+        width: 100vw - 2rem;
+    }
+
+    .block-group {
+        width: 100%;
+    }
+
+    .block-group-2 {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .categories, .discover {
+        padding: 2rem 0;
     }
 
     .join-community {
         padding: 3rem 1rem;
-        gap: 2rem;
+    }
+
+    .join-button {
+        padding: 0.5rem 1.5rem;
     }
     
     /* Product List */
@@ -701,31 +729,14 @@ input[type="radio"] {
         justify-self: stretch;
     }
 
-    .grid-item {
-        width: 7.0625rem;
-        height: 5.3125rem;
-        border-radius: 0.25rem;
-    }
-
-    #grid-item-3 {
-        background: url("../.res/xbox-card.jpeg") -87.43px 0px / 198.982% 100% no-repeat;
-    }
-
     #grid-item-4 {
-      width: 100vw;
-      height: 17.5rem;
-      margin-left: -1rem;
-      margin-right: -1rem;
-      border-radius: 0;
-      background: url("../.res/xbox-card.jpeg") -322.565px 0px/ cover no-repeat; 
+        margin-left: -1rem;
+        margin-right: -1rem;
     }
 
     #grid-item-2-4 {
-        width: 100vw;
-        height: 17.5rem;
         margin-left: -1rem;
         margin-right: -1rem;
-        border-radius: 0;
     }
 
     .function-buttons {
@@ -809,7 +820,7 @@ input[type="radio"] {
         align-self: center;
     }
 
-    /* Cart Overaly */
+    /* Cart Overlay */
     #cart-container {
         padding: 1rem;
         padding-top: 2rem;
@@ -821,6 +832,10 @@ input[type="radio"] {
 
     .cart-item-info {
         justify-content: space-between;
+    }
+
+    #cart-overlay .checkout-details {
+        margin-bottom: 3rem;
     }
 
     .quantity {

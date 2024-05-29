@@ -43,7 +43,7 @@ a:active {
 }
 
 .product-card-with-button {
-    height: 24.0625rem;
+    height: 24.75rem;
 }
 
 .product-card-button, .menu-button {
@@ -69,8 +69,6 @@ a:active {
 
 .award-image {
     width: 150px;
-    margin-left: 2.5em;
-    margin-right: 2.5em;
 }
 
 .block-image {
@@ -91,7 +89,6 @@ a:active {
 #street-fighter {
     width: calc((50vw - 5em)/2 - 0.5em);
     height: calc((50vw - 5em)/2 - 0.5em);
-    margin-right: 1em;
 }
 
 #pokemon {
@@ -531,14 +528,53 @@ input[type="radio"]:checked {
 }
 
 /* Media queries for mobile size */
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1100px){
+    /* Landing Page */
     .product-card-with-button > .image-holder {
         height: 8.5rem;
         width: 10.75rem;
     }
 
-    #Xbox-Series-X {
-        background: url("../.res/xbox-card.jpeg") -243.597px -0.026px / 265.813% 100% no-repeat;
+    .product-card #Xbox-Series-X {
+        background: url("../.res/xbox-card.jpeg") -257.907px 0px / 206.743% 100% no-repeat;
+    }
+
+    .award-image {
+        width: 6.3125rem;
+        height: 8.125rem;
+    }
+
+    .block {
+        width: 100vw - 2rem;
+    }
+
+    .block-group {
+        width: 100%;
+    }
+
+    .block-group-2 {
+        width: 100%;
+    }
+    .block-item{
+        height: 6.25rem;
+        width: 100%;
+        border-radius: 0.9rem;
+    }
+
+    #mario, #console-yellow, #street-fighter, #pokemon {
+        width: 100%;
+        height: 100%;
+    }
+
+    .art-holder {
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+
+    .discover-holder {
+        width: 6.25rem;
+        height: 6.25rem;
+        border-radius: 1rem;
     }
     
     /* Product List */
@@ -549,6 +585,34 @@ input[type="radio"]:checked {
     .product-card-with-button {
         width: 10.75rem;
         height: 17.8125rem;
+    }
+
+    .product-card-with-button #Xbox-Series-X {
+        background: url("../.res/xbox-card.jpeg") -161.288px 0px / 207.312% 100% no-repeat;
+    }
+
+    /* Product Page */
+    .grid-item {
+        width: 7.0625rem;
+        height: 5.3125rem;
+        border-radius: 0.25rem;
+    }
+
+    #grid-item-3 {
+        background: url("../.res/xbox-card.jpeg") -87.43px 0px / 198.982% 100% no-repeat;
+    }
+
+    #grid-item-4 {
+        width: 100vw;
+        height: 17.5rem;
+        border-radius: 0;
+        background: url("../.res/xbox-card.jpeg") -322.565px 0px/ cover no-repeat; 
+    }
+
+    #grid-item-2-4 {
+        width: 100vw;
+        height: 17.5rem;
+        border-radius: 0;
     }
 
     /* Checkout*/
@@ -581,7 +645,7 @@ input[type="radio"]:checked {
 
     /* Cart Overlay */
     #cart-container {
-        width: 95%;
+        width: 50%;
         height: 100%;
     }
 
@@ -592,7 +656,7 @@ input[type="radio"]:checked {
     }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 770px){
     /* Cart Overlay */
     #cart-container {
         width: 93%;

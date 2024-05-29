@@ -208,7 +208,7 @@ nav {
     align-items: center;
     width: 2.25rem;
     height: 2.25rem;
-    margin-right: -1rem ;
+    
 }
 
 #cart-hide {
@@ -219,12 +219,13 @@ nav {
     background-color: #C80000;
     color: white;
     border-radius: 50%;
-    padding: 0.4rem;
+    padding: 0.3rem 0.4rem;
     position: relative;
     top: -0.6rem;
-    right: 0.9rem;
+    right: 0.5rem;
     align-items: center;
     display: none;
+    margin: -0.5rem;
 }
 
 .icons {
@@ -232,7 +233,7 @@ nav {
     height: 2.25rem;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
     nav {
         padding: 0 1rem;
         margin-left: 1rem;
@@ -263,8 +264,8 @@ nav {
     }
 
     #cart-count {
-        padding: 0.2rem;
+        padding: 0.15rem 0.3rem;
         top: -0.4rem;
-        right: 0.7rem;
+        right: 0.2rem;
     }
 }
