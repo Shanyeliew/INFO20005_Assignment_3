@@ -1,6 +1,6 @@
 /* Background */
 body:not(#landing) {
-    background-image: url("../.res/background.png");
+    background-image: url("../assets/background.png");
     background-position: center 0;
     background-attachment: scroll;
     background-repeat: no-repeat;
@@ -15,7 +15,7 @@ body:not(#landing) {
 }
 
 #landing-background {
-    background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 15%, rgba(0,0,0,0) 25%), url("../.res/background.png");
+    background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 15%, rgba(0,0,0,0) 25%), url("../assets/background.png");
     background-size: cover;
 }
 
@@ -123,59 +123,59 @@ button:hover,  #Apply:hover, #back-home-button:hover {
 }
 
 #Xbox-Series-X {
-    background: url("../.res/xbox-card.jpeg") -395.136px -0.042px / 265.813% 100% no-repeat;
+    background: url("../assets/xbox-card.jpeg") -395.136px -0.042px / 265.813% 100% no-repeat;
 }
 
 #Made-in-Abyss-Figurine {
-    background: url("../.res/made-in-abyss.jpg") center / cover;
+    background: url("../assets/made-in-abyss.jpg") center / cover;
 }
 
 #Persona-3 {
-    background: url("../.res/persona-3.webp") center / cover;
+    background: url("../assets/persona-3.webp") center / cover;
 }
 
 #Nintendo-Switch-Lite {
-    background: url("../.res/nintendo-switch-light.jpg") center / cover;
+    background: url("../assets/nintendo-switch-light.jpg") center / cover;
 }
 
 #Atelier-Ayesha-DX {
-    background: url("../.res/atelier-ayesha-dx.jpg") center / cover;
+    background: url("../assets/atelier-ayesha-dx.jpg") center / cover;
 }
 
 #Hollow-Knight {
-    background: url("../.res/hollow-knight.webp") 0px -22.621px/ cover;
+    background: url("../assets/hollow-knight.webp") 0px -22.621px/ cover;
 }
 
 #Mewtwo-V-Card {
-    background: url("../.res/mewtwo-v-card.jpg") center / cover;
+    background: url("../assets/mewtwo-v-card.jpg") center / cover;
 }
 
 #Chainsaw-Man-T-Shirt {
-    background: url("../.res/chainsaw-man-T-shirt.webp") center / cover;
+    background: url("../assets/chainsaw-man-T-shirt.webp") center / cover;
 }
 
 #Consoles {
-    background: url("../.res/category-console.PNG") center / cover, #b382ff;
+    background: url("../assets/category-console.PNG") center / cover, #b382ff;
 }
 
 #Games {
-    background: url("../.res/category-games.PNG") center / cover, #6F30E8;
+    background: url("../assets/category-games.PNG") center / cover, #6F30E8;
 }
 
 #Collectible-cards {
-    background: url("../.res/category-collectible-cards.PNG") center / cover, #3220A0;
+    background: url("../assets/category-collectible-cards.PNG") center / cover, #3220A0;
 }
 
 #Figurines {
-    background: url("../.res/category-figurine.PNG") center / contain no-repeat, #1E0C79;
+    background: url("../assets/category-figurine.PNG") center / contain no-repeat, #1E0C79;
 }
 
 #Old-Consoles {
-    background: url("../.res/category-old-consoles.PNG") center / 80% 80% no-repeat, #28007E;
+    background: url("../assets/category-old-consoles.PNG") center / 80% 80% no-repeat, #28007E;
 }
 
 #Fashion {
-    background: url("../.res/category-fashion.PNG") center / cover, #34077F;
+    background: url("../assets/category-fashion.PNG") center / cover, #34077F;
 }
 
 .discover {
@@ -192,27 +192,27 @@ button:hover,  #Apply:hover, #back-home-button:hover {
 }
 
 #Gold-Coast {
-    background-image: url("../.res/discover-gold-coast.jpg");
+    background-image: url("../assets/discover-gold-coast.jpg");
 }
 
 #Sydney {
-    background-image: url("../.res/discover-sydney.webp");
+    background-image: url("../assets/discover-sydney.webp");
 }
 
 #Brisbane {
-    background-image: url("../.res/discover-brisbane.webp");
+    background-image: url("../assets/discover-brisbane.webp");
 }
 
 #Melbourne {
-    background-image: url("../.res/discover-melbourne.png");
+    background-image: url("../assets/discover-melbourne.png");
 }
 
 #Thailand {
-    background-image: url("../.res/discover-thailand.png");
+    background-image: url("../assets/discover-thailand.png");
 }
 
 .join-community {
-    background: linear-gradient(180deg, rgba(18,1,41,.8) 0%, rgba(0,0,0,.8) 100%), url("../.res/mario-join.jpg");
+    background: linear-gradient(180deg, rgba(18,1,41,.8) 0%, rgba(0,0,0,.8) 100%), url("../assets/mario-join.jpg");
     background-size: cover;
     background-position: bottom;
 }
@@ -263,43 +263,43 @@ button:hover,  #Apply:hover, #back-home-button:hover {
 }
 
 #Playstation-5-Joycon {
-    background: url("../.res/Playstation-5-Joycon.jpg") center / cover;
+    background: url("../assets/Playstation-5-Joycon.jpg") center / cover;
 }
 
 #Nintendo-NES-Console-1 {
-    background: url("../.res/Nintendo-NES-Console-1.jpg") center / cover;
+    background: url("../assets/Nintendo-NES-Console-1.jpg") center / cover;
 }
 
 #Playstation-5-Console {
-    background: url("../.res/Playstation-5-Console.jpg") center / cover;
+    background: url("../assets/Playstation-5-Console.jpg") center / cover;
 }
 
 #Nintendo-Switch-OLED {
-    background: url("../.res/Nintendo-Switch-OLED.webp") center / cover;
+    background: url("../assets/Nintendo-Switch-OLED.webp") center / cover;
 }
 
 #Nintendo-Switch-Sports {
-    background: url("../.res/Nintendo-Switch-Sports.webp") center / cover;
+    background: url("../assets/Nintendo-Switch-Sports.webp") center / cover;
 }
 
 #Handheld-Retro-Video {
-    background: url("../.res/Handheld-Retro-Video.webp") center / cover;
+    background: url("../assets/Handheld-Retro-Video.webp") center / cover;
 }
 
 #Retro-Mini-Tv {
-    background: url("../.res/Retro-Mini-Tv.jpg") center / cover;
+    background: url("../assets/Retro-Mini-Tv.jpg") center / cover;
 }
 
 #US-Sega-Saturn-Console {
-    background: url("../.res/US-Sega-Saturn-Console.jpg") center / cover;
+    background: url("../assets/US-Sega-Saturn-Console.jpg") center / cover;
 }
    
 #Switch-OLED-Model {
-    background: url("../.res/Switch-OLED-Model.jpg") center / cover;
+    background: url("../assets/Switch-OLED-Model.jpg") center / cover;
 }
 
 #Nintendo-Wii-Console {
-    background: url("../.res/Nintendo-Wii-Console.webp") center / cover;
+    background: url("../assets/Nintendo-Wii-Console.webp") center / cover;
 }
 
 .numbering {
@@ -401,7 +401,7 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked {
-    background-image: url("../.res/Icons/check.png");
+    background-image: url("../assets/Icons/check.png");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -480,7 +480,7 @@ input[type="radio"]:checked {
     width: 35%;
     height: 90%;
     background-size: cover;
-    background-image: linear-gradient(180deg, rgba(0,0,0,.5) 0%, rgba(0,0,0,.5) 50%, rgba(0,0,0,.5) 100%), url("../.res/background.png");
+    background-image: linear-gradient(180deg, rgba(0,0,0,.5) 0%, rgba(0,0,0,.5) 50%, rgba(0,0,0,.5) 100%), url("../assets/background.png");
     transition: right 0.5s ease-in-out;
 }
 
@@ -499,7 +499,7 @@ input[type="radio"]:checked {
 }
 
 #Xbox-Series-X-cart {
-    background: url("../.res/xbox-card.jpeg") -197.641px 0px / 262.188% 100% no-repeat;
+    background: url("../assets/xbox-card.jpeg") -197.641px 0px / 262.188% 100% no-repeat;
 }
 
 .cart-item-info {
@@ -545,7 +545,7 @@ input[type="radio"]:checked {
     }
 
     .product-card #Xbox-Series-X {
-        background: url("../.res/xbox-card.jpeg") -257.907px 0px / 206.743% 100% no-repeat;
+        background: url("../assets/xbox-card.jpeg") -257.907px 0px / 206.743% 100% no-repeat;
     }
 
     .award-image {
@@ -598,7 +598,7 @@ input[type="radio"]:checked {
     }
 
     .product-card-with-button #Xbox-Series-X {
-        background: url("../.res/xbox-card.jpeg") -161.288px 0px / 207.312% 100% no-repeat;
+        background: url("../assets/xbox-card.jpeg") -161.288px 0px / 207.312% 100% no-repeat;
     }
 
     /* Product Page */

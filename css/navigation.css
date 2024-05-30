@@ -66,7 +66,7 @@ nav {
 }
 
 #search {
-    background-image: url('../.res/Icons/search.png');
+    background-image: url('../assets/Icons/search.png');
     background-repeat: no-repeat;
     background-position: center left 1rem;
     background-color: #F2F4F8;
@@ -84,7 +84,7 @@ nav {
 }
 
 #dropdown-search-mobile {
-    background-image: url('../.res/Icons/search-mobile.png');
+    background-image: url('../assets/Icons/search-mobile.png');
     background-repeat: no-repeat;
     background-position: center left 1rem;
     background-color: #242424;
@@ -180,13 +180,13 @@ nav {
 #Xbox-Series-X-search {
     width: 3.5625rem;
     height: 3.5625rem;
-    background: url("../.res/xbox-card.jpeg") -75.104px 0px / 262.188% 100% no-repeat;
+    background: url("../assets/xbox-card.jpeg") -75.104px 0px / 262.188% 100% no-repeat;
 }
 
 #Nintendo-Switch-Lite-search {
     width: 3.5625rem;
     height: 3.5625rem;
-    background-image: url("../.res/nintendo-switch-light.jpg");
+    background-image: url("../assets/nintendo-switch-light.jpg");
     background-size: cover;
 }
 
