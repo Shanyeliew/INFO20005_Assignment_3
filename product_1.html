@@ -116,37 +116,50 @@
     <section class="product-header">
         <div class="images-grid">
             <div class="grid-side">
-                <div id="grid-item-1" class="grid-item"></div>
-                <div id="grid-item-2" class="grid-item"></div>
-                <div id="grid-item-3" class="grid-item"></div>
-            </div>
-            <div id="grid-item-4" class="grid-item"></div>
-        </div>
-        <div class="text">
-            <h2>Xbox Series X</h2>
-            <div class="status">
-                <img src=".res/Icons/in-stock.png" alt="">
-                <p class="status-text">In Stock</p>
-            </div>
-            <p class="short-info">
-                Platform : Xbox One, Windows, Xbox Series S, Xbox Series X <br>
-                <br>
-                Colour Name: Carbon <br>
-                <br>
-                BlackEdition: Standard 
-            </p>
-            <div class="promotion-bigger">
-                <p class="product-promotion-bigger">-30%</p>
-            </div>
-            <h2>$450</h2>
-            <div class="function-buttons">
-                <button class="product-button">Add to Cart</button>
-                <div class="quantity">
-                    <img src=".res/Icons/minus.png" alt="Minus">
-                    <p class="quantity-number">1</p>
-                    <img src=".res/Icons/plus.png" alt="Plus">
+                <div id="grid-item-1" class="grid-item">
+                    <img src="../.res/Xbox-1.jpg" alt="" class="grid-image" id="grid-image-1">
+                </div>
+                <div id="grid-item-2" class="grid-item">
+                    <img src="../.res/Xbox-2.jpg" alt="" class="grid-image" id="grid-image-2">
+                </div>
+                <div id="grid-item-3" class="grid-item">
+                    <img src="../.res/xbox-card.jpeg" alt="" class="grid-image" id="grid-image-3">
                 </div>
             </div>
+            <div id="grid-item-4" class="grid-item">
+                <img src="../.res/xbox-card.jpeg" alt="" class="grid-image" id="grid-image-4">
+            </div>
+        </div>
+        <div class="text">
+            <div class="up">
+                <h2>Xbox Series X</h2>
+                <div class="status">
+                    <img src=".res/Icons/in-stock.png" alt="">
+                    <p class="status-text">In Stock</p>
+                </div>
+                <p class="short-info">
+                    Platform : Xbox One, Windows, Xbox Series S, Xbox Series X <br>
+                    <br>
+                    Colour Name: Carbon <br>
+                    <br>
+                    BlackEdition: Standard 
+                </p>
+            </div>
+            <div class="lower">
+                <div class="promotion-bigger">
+                    <p class="product-promotion-bigger">-30%</p>
+                </div>
+                <h2>$450</h2>
+                <div class="function-buttons">
+                    <button class="product-button">Add to Cart</button>
+                    <div class="quantity">
+                        <img src=".res/Icons/minus.png" alt="Minus">
+                        <p class="quantity-number">1</p>
+                        <img src=".res/Icons/plus.png" alt="Plus">
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
     <section class="toggle-menu">
@@ -400,7 +413,10 @@
                     </div>
                 </div> 
             </div>
-            <div class="checkout-details">
+            <div id="empty">
+                <p class="cart-title">There's nothing here...</p>
+            </div>
+            <div class="checkout-details" id="checkout-details">
                 <div class="promo-code">
                     <button id="placeholder">Promo</button>
                     <button id="Apply">Apply</button>

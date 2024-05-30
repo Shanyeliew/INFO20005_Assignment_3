@@ -13,6 +13,8 @@ var cartCount = document.getElementById('cart-count');
 var backHome = document.getElementById('back-home-button');
 var item1 = document.getElementById('item-1');
 var item2 = document.getElementById('item-2');
+var checkoutDetails = document.getElementById('checkout-details');
+var emptyCart = document.getElementById('empty');
 var count = 0;
 
 //variables for the checkout form validation
@@ -74,10 +76,14 @@ if(window.location.href.indexOf('product_1.html') > -1 || window.location.href.i
         if (Number(savedCount) == 0) {
             item1.style.display = 'none';
             item2.style.display = 'none'; 
+            checkoutDetails.style.display = 'none';
+            emptyCart.style.display = 'flex';
         }
 
         if(Number(savedCount) >= 1) {
             item1.style.display = 'flex';
+            checkoutDetails.style.display = 'flex';
+            emptyCart.style.display = 'none';
         }  
         
         if(Number(savedCount) >= 2) {

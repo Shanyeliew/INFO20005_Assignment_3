@@ -35,14 +35,14 @@ a:active {
     text-decoration: none;
 }
 
-.product-card, .product-card-with-button {
+.product-card, .product-card-with-button{
     width: 17.4375rem;
     height: 22rem;
     border-radius: 1rem;
     background-color: rgba(255, 255, 255, 10%);
 }
 
-.product-card-with-button {
+.product-card-with-button{
     height: 24.75rem;
 }
 
@@ -50,6 +50,16 @@ a:active {
     border-radius: 100rem;
     background: transparent;
     border: 0.1rem solid #FFF;
+}
+
+button:hover,  #Apply:hover, #back-home-button:hover {
+    background: #d6d6d6;
+}
+
+.product-card-button:hover, .menu-button:hover, 
+.confirm-payment-btn:hover, .join-button:hover, #order-track-button:hover {
+    background: #FFF;
+    color: #000;
 }
 
 .promotion, .promotion-bigger{
@@ -72,28 +82,28 @@ a:active {
 }
 
 .block-image {
-    border-radius: 1em;
+    border-radius: 1rem;
     object-fit: cover;
 }
 
 #mario {
-    width: calc(50vw - 5em);
-    height: calc(50vw - 5em);
+    width: calc(50vw - 5rem);
+    height: calc(50vw - 5rem);
 }
 
 #console-yellow {
-    width: calc(50vw - 5em);
-    height: calc((50vw - 5em)/2 - 0.5em);
+    width: calc(50vw - 5rem);
+    height: calc((50vw - 5rem)/2 - 0.5rem);
 }
 
 #street-fighter {
-    width: calc((50vw - 5em)/2 - 0.5em);
-    height: calc((50vw - 5em)/2 - 0.5em);
+    width: calc((50vw - 5rem)/2 - 0.5rem);
+    height: calc((50vw - 5rem)/2 - 0.5rem);
 }
 
 #pokemon {
-    width: calc((50vw - 5em)/2 - 0.5em);
-    height: calc((50vw - 5em)/2 - 0.5em);
+    width: calc((50vw - 5rem)/2 - 0.5rem);
+    height: calc((50vw - 5rem)/2 - 0.5rem);
 }
 
 .categories {
@@ -302,49 +312,48 @@ a:active {
 }
 
 /* Product Page */
+.grid-side {
+    width: auto;
+    height: auto;
+}
+
 .grid-item {
-    width: 13.0625rem;
-    height: 9.125rem;
     border-radius: 0.5rem;
 }
 
-#grid-item-1 {
-    background: url(../.res/Xbox-1.jpg) center / contain no-repeat, #FFF;
+.grid-image {
+    object-fit: cover;
+    object-position: center;
+    width: calc((40vw)/ 3);
+    height: calc((40vw)/3 - 1rem);
+    border-radius: 0.5rem;
 }
 
-#grid-item-2 {
-    background: url(../.res/Xbox-2.jpg) center / cover no-repeat, #FFF;
+#grid-item-1, #grid-image-2-1, #grid-image-2-4 {
+    background-color: #ffffff;
 }
 
-#grid-item-3 {
-    background: url(../.res/xbox-card.jpeg) -151.506px 0px / 196.641% 100% no-repeat, #DDE1E6;
-    
+#grid-image-1, #grid-image-2-1 {
+    object-fit: contain;
+}
+
+#grid-image-3 {
+    object-position: 85% 0;
+}
+
+#grid-image-4, #grid-image-2-4 {
+    object-position: 85% 0;
+    width: calc((38vw));
+    min-height: 100%;
+    border-radius: 1rem;
 }
 
 #grid-item-4 {
-    background: url(../.res/xbox-pp.png) center / cover no-repeat, #DDE1E6;
-    width: 30.375rem;
-    height: 32.0625rem;
     border-radius: 1rem;
 }
 
-#grid-item-2-1 {
-    background: url(../.res/nintendo-1.jpg) center / contain no-repeat, #FFF;
-}
-
-#grid-item-2-2 {
-    background: url(../.res/nintendo-2.jpg) center / cover no-repeat, #FFF;
-}
-
-#grid-item-2-3 {
-    background: url(../.res/nintendo-3.jpg) center / cover no-repeat, #DDE1E6;
-}
-
-#grid-item-2-4 {
-    background: url(../.res/nintendo-switch-light.jpg) center/ cover no-repeat, #DDE1E6;
-    width: 30.375rem;
-    height: 32.0625rem;
-    border-radius: 1rem;
+.text {
+    width: 50%;
 }
 
 .product-button {
@@ -564,6 +573,7 @@ input[type="radio"]:checked {
     #mario, #console-yellow, #street-fighter, #pokemon {
         width: 100%;
         height: 100%;
+        object-position: 0 20%;
     }
 
     .art-holder {
@@ -592,27 +602,31 @@ input[type="radio"]:checked {
     }
 
     /* Product Page */
-    .grid-item {
-        width: 7.0625rem;
-        height: 5.3125rem;
-        border-radius: 0.25rem;
+    .grid-item:not(#grid-item-4, #grid-item-2-4) {
+        width: 100%;
+        height: 20vw;
+        border-radius: 0.2rem;
+    }
+    .grid-image {
+        flex-shrink: 0;
+        min-width: 100%;
+        min-height: 100%;
+        border-radius: 0.2rem;
     }
 
-    #grid-item-3 {
-        background: url("../.res/xbox-card.jpeg") -87.43px 0px / 198.982% 100% no-repeat;
-    }
-
-    #grid-item-4 {
-        width: 100vw;
-        height: 17.5rem;
+    #grid-image-4, #grid-image-2-4 {
+        width: calc(100vw);
+        height: calc(70vw);
         border-radius: 0;
-        background: url("../.res/xbox-card.jpeg") -322.565px 0px/ cover no-repeat; 
     }
 
-    #grid-item-2-4 {
-        width: 100vw;
-        height: 17.5rem;
-        border-radius: 0;
+    #grid-image-2-4{
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .text {
+        width: 100%;
     }
 
     /* Checkout*/
